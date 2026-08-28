@@ -95,16 +95,12 @@ Interactive project for understanding **single-variable calculus computationally
 
 ## 📚 Currently Learning
 
-```text
-DSA & C++
-    ↓
-Python & Data Analysis
-    ↓
-Machine Learning
-    ↓
-Deep Learning & NLP
-    ↓
-AI/ML Systems Engineering
+```mermaid
+flowchart LR
+    A[DSA & C++] --> B[Python & Data Analysis]
+    B --> C[Machine Learning]
+    C --> D[Deep Learning & NLP]
+    D --> E[AI/ML Systems Engineering]
 ```
 
 Currently exploring:
