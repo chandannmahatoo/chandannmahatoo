@@ -43,6 +43,10 @@
 
 <img src="https://img.shields.io/badge/CURRENT%20STAGE-Q1%20OF%2012%20%7C%20FOUNDATIONS-164E63?style=flat-square" alt="Current stage Q1 of 12: Foundations">
 
+<!-- ROADMAP_PROGRESS:START -->
+<sub>Q1 of 12 · Foundations</sub>
+<!-- ROADMAP_PROGRESS:END -->
+
 - Programming fundamentals with C++ and Python
 - Data Structures & Algorithms
 - Mathematics for Computer Science
@@ -95,7 +99,7 @@
 </div>
 ## Projects & Experiments
 
-The projects below represent a mix of roadmap milestones, hackathon work and independent exploration. Their descriptions reflect the scope of work, not a claim of production readiness.
+A selection of collaborative projects, applied experiments and planned work. Status labels reflect the current state; planned capabilities are not presented as completed features.
 
 <table>
 <tr>
@@ -103,29 +107,29 @@ The projects below represent a mix of roadmap milestones, hackathon work and ind
 
 ### DSA Toolkit
 
-**Q1 roadmap project**
+**<img src="https://img.shields.io/badge/STATUS-PLANNED-6E7781?style=flat-square" alt="Planned">**
 
-A C++ implementation collection for understanding core data structures and algorithms through code, testing and complexity analysis.
+A planned C++ project to implement core data structures and algorithms through code, testing and complexity analysis.
 
 - Data structures and algorithms
 - Implementation and problem solving
 - Testing and benchmarking
 
-<sub>Roadmap milestone · Q1</sub>
+<sub>Q1 roadmap milestone · Development has not started.</sub>
 
 </td>
 <td width="50%" valign="top">
 
 ### AI Sentiment & Emotion Analysis
 
-**Q2 roadmap project / collaborative exploration**
+**<img src="https://img.shields.io/badge/STATUS-COLLABORATIVE%20PROJECT-238636?style=flat-square" alt="Collaborative project">**
 
 An NLP project exploring text-based sentiment and emotion classification.
 
-- Exploratory data analysis
-- Text preprocessing
-- Machine learning experiments
+**My contribution**
+- Model training
 - Model evaluation
+- Comparing model behaviour and evaluation outcomes
 
 <a href="https://github.com/chandannmahatoo/AI-Sentiment"><strong>AI-Sentiment repository ↗</strong></a>
 
@@ -136,13 +140,13 @@ An NLP project exploring text-based sentiment and emotion classification.
 
 ### ThermaGuard-AI
 
-**Independent project exploration**
+**<img src="https://img.shields.io/badge/STATUS-EXPLORATION-8957E5?style=flat-square" alt="Exploration">**
 
 A geospatial intelligence project exploring industrial fire and persistent thermal anomaly detection using satellite data and contextual information.
 
-- NASA FIRMS and geospatial data
-- Context enrichment and feature engineering
-- Classification and risk analysis
+**My contribution**
+- Machine learning and exploratory data analysis (ML / EDA)
+- Exploring data patterns and features relevant to thermal anomaly detection
 
 <a href="https://github.com/chandannmahatoo/ThermaGuard-AI"><strong>ThermaGuard-AI repository ↗</strong></a>
 
@@ -151,16 +155,16 @@ A geospatial intelligence project exploring industrial fire and persistent therm
 
 ### AI Vernacular Pedagogy & Translation
 
-**SIH 2026 · Hackathon project**
+**<img src="https://img.shields.io/badge/STATUS-WORKING%20PROTOTYPE-1F6FEB?style=flat-square" alt="Working prototype">**
 
-Exploring an AI-powered multilingual translation solution for mother-tongue primary education.
+A SIH 2026 project exploring AI-assisted multilingual translation for mother-tongue primary education.
 
 - Hindi ↔ Punjabi
 - English ↔ Punjabi
 - Translation models and API exploration
 - Voice interaction and educational content
 
-<sub>Prototype exploration · SIH 2026</sub>
+<sub>Working prototype · Further evaluation details will be added as they are documented.</sub>
 
 </td>
 </tr>
@@ -176,12 +180,18 @@ Exploring an AI-powered multilingual translation solution for mother-tongue prim
 </div>
 
 <!-- REPOSITORIES:START -->
-<table><tbody><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/AI-Sentiment">📁 AI-Sentiment</a></h3><p>Explore this repository and its development.</p><p><img src="https://img.shields.io/badge/Language-Python-2563EB?style=flat-square" alt="Language: Python"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-11-21</sub></p><p><a href="https://github.com/chandannmahatoo/AI-Sentiment">View Repository ↗</a></p></div></td></tr><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/ThermaGuard-AI">📁 ThermaGuard-AI</a></h3><p>AI-powered geospatial intelligence platform for detecting, classifying, and monitoring industrial fires and persistent thermal anomalies using NASA FIRMS, satellite data, geospatial context, and explainable AI.</p><p><img src="https://img.shields.io/badge/Language-Python-2563EB?style=flat-square" alt="Language: Python"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-09-13</sub></p><p><a href="https://github.com/chandannmahatoo/ThermaGuard-AI">View Repository ↗</a></p></div></td></tr><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/chandan-portfolio">📁 chandan-portfolio</a></h3><p>Explore this repository and its development.</p><p><img src="https://img.shields.io/badge/Language-TypeScript-2563EB?style=flat-square" alt="Language: TypeScript"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-09-02</sub></p><p><a href="https://github.com/chandannmahatoo/chandan-portfolio">View Repository ↗</a></p></div></td></tr><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/chandannmahatoo">📁 chandannmahatoo</a></h3><p>Aspiring AI/ML Systems Engineer | Building AI from First Principles 🚀</p><p><img src="https://img.shields.io/badge/Language-Not%20specified-2563EB?style=flat-square" alt="Language: Not specified"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-08-28</sub></p><p><a href="https://github.com/chandannmahatoo/chandannmahatoo">View Repository ↗</a></p></div></td></tr><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/git-hooks-automation-suite">📁 git-hooks-automation-suite</a></h3><p>Git hooks are automated scripts that run at specific points during Git&#39;s workflow. They let you customize Git&#39;s behavior and enforce policies, run tests, or perform other actions automatically.</p><p><img src="https://img.shields.io/badge/Language-Python-2563EB?style=flat-square" alt="Language: Python"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-07-01</sub></p><p><a href="https://github.com/chandannmahatoo/git-hooks-automation-suite">View Repository ↗</a></p></div></td></tr></tbody></table>
+<!-- This block is generated by .github/workflows/update-profile-data.yml -->
 <!-- REPOSITORIES:END -->
 
 <div align="center">
   <sub>Automatically refreshed with my most recently updated public repositories.</sub>
 </div>
+
+## Recent Repository Activity
+
+<!-- RECENT_COMMITS:START -->
+<sub>Recent commit activity will appear here after the workflow runs.</sub>
+<!-- RECENT_COMMITS:END -->
 
 ## GitHub Analytics
 
