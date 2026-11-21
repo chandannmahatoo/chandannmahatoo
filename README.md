@@ -237,38 +237,23 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 
 ---
 
-## 🛠️ Recent Repository Activity
+
+## ⚡ Recent Development Activity
+
+<sub>A live snapshot of my latest repository commits and development progress.</sub>
+
+<br>
 
 <!-- RECENT_COMMITS:START -->
-<table>
-<thead><tr><th>Repository</th><th>Commit</th><th>Latest change</th><th>When</th></tr></thead>
-<tbody>
-<tr>
-  <td><strong><a href="https://github.com/chandannmahatoo/AI-Sentiment">AI-Sentiment</a></strong></td>
-  <td><a href="https://github.com/chandannmahatoo/AI-Sentiment/commit/f5c7fd9322190ade06e35f250bfd82448e77afd7"><code>f5c7fd9</code></a></td>
-  <td>Updated files in models/</td>
-  <td><sub>today</sub></td>
-</tr>
-<tr>
-  <td><strong><a href="https://github.com/chandannmahatoo/ThermaGuard-AI">ThermaGuard-AI</a></strong></td>
-  <td><a href="https://github.com/chandannmahatoo/ThermaGuard-AI/commit/3ecb78dc64513101979321aa13e2bc4858c25b04"><code>3ecb78d</code></a></td>
-  <td>Create SECURITY.md</td>
-  <td><sub>2 months ago</sub></td>
-</tr>
-<tr>
-  <td><strong><a href="https://github.com/chandannmahatoo/chandan-portfolio">chandan-portfolio</a></strong></td>
-  <td><a href="https://github.com/chandannmahatoo/chandan-portfolio/commit/6b477bf25e11327a193e961abc9317423c72c7f1"><code>6b477bf</code></a></td>
-  <td>Final version</td>
-  <td><sub>2 months ago</sub></td>
-</tr>
-</tbody>
-</table>
+<sub>Recent commits will appear here after the workflow runs.</sub>
 <!-- RECENT_COMMITS:END -->
+
+<br>
 
 <div align="center">
 
 <a href="https://github.com/chandannmahatoo?tab=repositories">
-  <img src="https://img.shields.io/badge/VIEW-MORE%20PROJECTS-1F6FEB?style=flat-square&logo=github&logoColor=white" alt="View more projects">
+  <img src="https://img.shields.io/badge/EXPLORE-MY%20GITHUB-1F6FEB?style=flat-square&logo=github&logoColor=white" alt="Explore GitHub repositories">
 </a>
 
 <br>
@@ -276,6 +261,7 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 <sub>Building · Experimenting · Improving · One commit at a time.</sub>
 
 </div>
+
 
 
 ## GitHub Analytics
