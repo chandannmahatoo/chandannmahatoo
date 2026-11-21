@@ -177,8 +177,6 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 <a href="https://github.com/chandannmahatoo?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-ALL%20REPOSITORIES-164E63?style=for-the-badge&logo=github&logoColor=white" alt="Explore all repositories"></a>
 <img src="https://img.shields.io/badge/AUTO--UPDATED-GITHUB%20ACTIONS-2563EB?style=for-the-badge&logo=githubactions&logoColor=white" alt="Automatically updated with GitHub Actions">
 
-<br><br>
-
 <!-- REPO_SUMMARY:START -->
 <sub><b>4</b> public repositories · <b>1</b> active in the last 14 days · last push <b>today</b></sub>
 <!-- REPO_SUMMARY:END -->
