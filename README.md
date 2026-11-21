@@ -53,55 +53,11 @@
 </tr>
 </table>
 
-## The 36-Month Learning Journey
-
-**12 quarters. One journey. From a student to an AI/ML Systems Engineer.**
-
-My roadmap is organized into 12 quarters, with each quarter combining focused learning and a practical engineering project. The sequence moves from programming and mathematics foundations toward AI infrastructure and an independent AI platform.
-
-<details open>
-<summary><strong>Q1–Q4 · Foundations to Transformers & LLMs (Months 1–12)</strong></summary>
-
-| Quarter | Focus | Core learning areas | Roadmap project |
-|:--|:--|:--|:--|
-| **Q1 · Months 1–3** | Build Your Foundations | C++ / Python; DSA (arrays, trees, graphs); mathematics (linear algebra, calculus, probability); Git, Linux, testing; problem solving | **DSA Toolkit** — implement core data structures and algorithms |
-| **Q2 · Months 4–6** | Classical Machine Learning | NumPy, Pandas; regression, trees, SVM, clustering; model evaluation; feature engineering; end-to-end ML pipeline | **Sentiment Analysis AI** — dataset → model → API → deployment |
-| **Q3 · Months 7–9** | Deep Learning | Neural networks; backpropagation; PyTorch; CNN, RNN, LSTM; attention | **MiniAutograd** — build a neural network from scratch using NumPy |
-| **Q4 · Months 10–12** | Transformers & LLMs | Tokenization; transformer architecture; training and sampling; KV cache fundamentals; introduction to LLM production | **MiniGPT** — build and train a small transformer model |
-
-</details>
-
-<details>
-<summary><strong>Q5–Q8 · Systems Engineering to Distributed ML (Months 13–24)</strong></summary>
-
-| Quarter | Focus | Core learning areas | Roadmap project |
-|:--|:--|:--|:--|
-| **Q5 · Months 13–15** | Systems Engineering | C; memory; operating systems; processes and threads; networking (TCP/IP); databases and caching; system calls | **Systems Lab** — build an allocator, thread pool, HTTP server and key-value store |
-| **Q6 · Months 16–18** | Production ML / MLOps | FastAPI; Docker and Kubernetes; CI/CD; model serving; monitoring and logging; experiment tracking | **Production ML Platform V1** — deploy an end-to-end ML model |
-| **Q7 · Months 19–21** | GPU / CUDA Engineering | GPU architecture; CUDA programming; kernel optimization; memory management; profiling and benchmarking | **CUDA Kernels** — implement and optimize matrix operations and other kernels |
-| **Q8 · Months 22–24** | Distributed ML Systems | Distributed systems; data parallelism; model parallelism; fault tolerance; distributed training | **Distributed Training** — train a model across multiple GPUs or machines |
-
-</details>
-
-<details>
-<summary><strong>Q9–Q12 · LLM Serving to an Independent AI Platform (Months 25–36)</strong></summary>
-
-| Quarter | Focus | Core learning areas | Roadmap project |
-|:--|:--|:--|:--|
-| **Q9 · Months 25–27** | LLM Inference & Serving | Scheduling; batching; KV cache; quantization; streaming; inference engines | **MiniServe** — build a high-performance LLM inference server |
-| **Q10 · Months 28–30** | AI Infrastructure | Serving infrastructure; vector databases; model optimization; autoscaling; observability; AI compilers (introduction) | **Mini AI Cloud** — build a scalable multi-model serving platform |
-| **Q11 · Months 31–33** | Agents & Coding AI | RAG and tool calling; agent planning; code understanding; sandboxing and execution; testing; evaluation and safety | **Coding Agent** — build an agent that can understand a repository and help fix issues |
-| **Q12 · Months 34–36** | Independent AI Platform | Full-stack AI systems; chat, agents and tools; model routing; security and monitoring; real-world deployment | **Your AI Platform** — integrate models, agents, tools and deployment |
-
-</details>
-
-<sub>Roadmap note: quarter names and projects describe planned learning milestones, not claims that every topic or project is already completed. The current stage is Q1.</sub>
-
 ## Tech Stack
 
 <div align="center">
 
-**Programming Languages**
+### Programming Languages
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=cpp,python,c&theme=dark">
@@ -111,16 +67,16 @@ My roadmap is organized into 12 quarters, with each quarter combining focused le
 
 <br><br>
 
-**AI, Machine Learning & Data**
+### Data Science & Machine Learning
 
-<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy">
-<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas">
-<img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="Scikit-learn">
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square" alt="Matplotlib">
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+<img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Scikit-learn">
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge" alt="Matplotlib">
 
 <br><br>
 
-**Development Environment**
+### Developer Tools & Environment
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git,github,vscode,jupyter,linux&theme=dark">
@@ -128,8 +84,15 @@ My roadmap is organized into 12 quarters, with each quarter combining focused le
   <img src="https://skillicons.dev/icons?i=git,github,vscode,jupyter,linux" height="48" alt="Git, GitHub, VS Code, Jupyter and Linux">
 </picture>
 
-</div>
+<br><br>
 
+### Currently Exploring
+
+<img src="https://img.shields.io/badge/NLP-Exploring-6366F1?style=flat-square" alt="Exploring NLP">
+<img src="https://img.shields.io/badge/Machine%20Learning-Exploring-6366F1?style=flat-square" alt="Exploring Machine Learning">
+<img src="https://img.shields.io/badge/Translation%20Models-Exploring-6366F1?style=flat-square" alt="Exploring Translation Models">
+
+</div>
 ## Projects & Experiments
 
 The projects below represent a mix of roadmap milestones, hackathon work and independent exploration. Their descriptions reflect the scope of work, not a claim of production readiness.
@@ -213,7 +176,6 @@ Exploring an AI-powered multilingual translation solution for mother-tongue prim
 </div>
 
 <!-- REPOSITORIES:START -->
-<table><tbody><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/AI-Sentiment">📁 AI-Sentiment</a></h3><p>Explore this repository and its development.</p><p><img src="https://img.shields.io/badge/Language-Python-2563EB?style=flat-square" alt="Language: Python"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-11-21</sub></p><p><a href="https://github.com/chandannmahatoo/AI-Sentiment">View Repository ↗</a></p></div></td></tr><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/ThermaGuard-AI">📁 ThermaGuard-AI</a></h3><p>AI-powered geospatial intelligence platform for detecting, classifying, and monitoring industrial fires and persistent thermal anomalies using NASA FIRMS, satellite data, geospatial context, and explainable AI.</p><p><img src="https://img.shields.io/badge/Language-Python-2563EB?style=flat-square" alt="Language: Python"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-09-13</sub></p><p><a href="https://github.com/chandannmahatoo/ThermaGuard-AI">View Repository ↗</a></p></div></td></tr><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/chandan-portfolio">📁 chandan-portfolio</a></h3><p>Explore this repository and its development.</p><p><img src="https://img.shields.io/badge/Language-TypeScript-2563EB?style=flat-square" alt="Language: TypeScript"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-09-02</sub></p><p><a href="https://github.com/chandannmahatoo/chandan-portfolio">View Repository ↗</a></p></div></td></tr><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/chandannmahatoo">📁 chandannmahatoo</a></h3><p>Aspiring AI/ML Systems Engineer | Building AI from First Principles 🚀</p><p><img src="https://img.shields.io/badge/Language-Not%20specified-2563EB?style=flat-square" alt="Language: Not specified"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-08-28</sub></p><p><a href="https://github.com/chandannmahatoo/chandannmahatoo">View Repository ↗</a></p></div></td></tr><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/git-hooks-automation-suite">📁 git-hooks-automation-suite</a></h3><p>Git hooks are automated scripts that run at specific points during Git&#39;s workflow. They let you customize Git&#39;s behavior and enforce policies, run tests, or perform other actions automatically.</p><p><img src="https://img.shields.io/badge/Language-Python-2563EB?style=flat-square" alt="Language: Python"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-07-01</sub></p><p><a href="https://github.com/chandannmahatoo/git-hooks-automation-suite">View Repository ↗</a></p></div></td></tr></tbody></table>
 <!-- REPOSITORIES:END -->
 
 <div align="center">
