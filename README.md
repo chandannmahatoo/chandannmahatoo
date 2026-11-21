@@ -245,7 +245,11 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 <br>
 
 <!-- RECENT_COMMITS:START -->
-<sub>Recent commits will appear here after the workflow runs.</sub>
+- **<a href="https://github.com/chandannmahatoo/AI-Sentiment">AI-Sentiment</a>** · <a href="https://github.com/chandannmahatoo/AI-Sentiment/commit/f5c7fd9322190ade06e35f250bfd82448e77afd7"><code>f5c7fd9</code></a><br>  Updated files in models/ <sub>· 🕒 today</sub>
+
+- **<a href="https://github.com/chandannmahatoo/ThermaGuard-AI">ThermaGuard-AI</a>** · <a href="https://github.com/chandannmahatoo/ThermaGuard-AI/commit/3ecb78dc64513101979321aa13e2bc4858c25b04"><code>3ecb78d</code></a><br>  Create SECURITY.md <sub>· 🕒 2 months ago</sub>
+
+- **<a href="https://github.com/chandannmahatoo/chandan-portfolio">chandan-portfolio</a>** · <a href="https://github.com/chandannmahatoo/chandan-portfolio/commit/6b477bf25e11327a193e961abc9317423c72c7f1"><code>6b477bf</code></a><br>  Final version <sub>· 🕒 2 months ago</sub>
 <!-- RECENT_COMMITS:END -->
 
 <br>
