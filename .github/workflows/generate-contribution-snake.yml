@@ -32,35 +32,47 @@ jobs:
             dist/github-contribution-grid-snake.svg?palette=github
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      
       - name: Publish SVGs to output branch
         env:
           BRANCH_NAME: output
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
 
-          # Preserve generated assets outside the checked-out branch.
-          mkdir -p "$RUNNER_TEMP/snake-assets"
-          cp -R dist/. "$RUNNER_TEMP/snake-assets/"
+          # Create a clean directory for publishing.
+          mkdir -p "$RUNNER_TEMP/snake-publish"
+          cp dist/github-contribution-grid-snake.svg \
+            "$RUNNER_TEMP/snake-publish/"
+          cp dist/github-contribution-grid-snake-dark.svg \
+            "$RUNNER_TEMP/snake-publish/"
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Determine whether the output branch already exists.
+          # Fetch the output branch if it already exists.
           if git ls-remote --exit-code --heads origin "$BRANCH_NAME" >/dev/null 2>&1; then
             git fetch origin "$BRANCH_NAME"
-            git checkout -B "$BRANCH_NAME" "origin/$BRANCH_NAME"
+            git worktree add \
+              -B "$BRANCH_NAME" \
+              "$RUNNER_TEMP/snake-output" \
+              "origin/$BRANCH_NAME"
             branch_exists=true
           else
-            git checkout --orphan "$BRANCH_NAME"
+            git worktree add --detach "$RUNNER_TEMP/snake-output" HEAD
+            cd "$RUNNER_TEMP/snake-output"
+            git switch --orphan "$BRANCH_NAME"
             git rm -rf . >/dev/null 2>&1 || true
             branch_exists=false
           fi
 
-          # Keep only the generated snake assets on the output branch.
-          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
-          cp -R "$RUNNER_TEMP/snake-assets/." .
+          cd "$RUNNER_TEMP/snake-output"
 
-          git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
+          # Replace only the generated files in the isolated worktree.
+          cp "$RUNNER_TEMP/snake-publish/"*.svg .
+
+          git add github-contribution-grid-snake.svg \
+                  github-contribution-grid-snake-dark.svg
 
           if git diff --cached --quiet; then
             echo "Snake SVGs are already up to date."
@@ -69,8 +81,9 @@ jobs:
 
           git commit -m "chore: update contribution snake"
 
-          # Existing branch: rebase before pushing. First publish has no remote branch to rebase onto.
+          # Rebase against the latest output branch before publishing.
           if [[ "$branch_exists" == "true" ]]; then
+            git fetch origin "$BRANCH_NAME"
             git pull --rebase origin "$BRANCH_NAME"
           fi
 
