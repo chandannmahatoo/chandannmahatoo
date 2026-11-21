@@ -61,24 +61,46 @@ jobs:
                 + source.slice(endIndex);
             }
 
+            // CHANGED: shortens at a word boundary so text never ends mid-word.
             function cleanText(value, maxLength = 180) {
               const text = String(value || "")
                 .replace(/[\r\n\t]+/g, " ")
                 .replace(/\s+/g, " ")
                 .trim();
 
-              return text.length > maxLength
-                ? text.slice(0, maxLength - 1) + "…"
-                : text;
+              if (text.length <= maxLength) return text;
+
+              const cut = text.slice(0, maxLength - 1);
+              const space = cut.lastIndexOf(" ");
+              return (space > maxLength * 0.6 ? cut.slice(0, space) : cut).trimEnd() + "…";
             }
 
-            function escapeMarkdown(value) {
-              return cleanText(value, 180)
+            // CHANGED: optional length argument; also escapes * < > so text cannot break the layout.
+            function escapeMarkdown(value, maxLength = 180) {
+              return cleanText(value, maxLength)
                 .replace(/\\/g, "\\\\")
                 .replace(/\|/g, "\\|")
                 .replace(/`/g, "\\`")
+                .replace(/\*/g, "\\*")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
                 .replace(/\[/g, "\\[")
                 .replace(/\]/g, "\\]");
+            }
+
+            // NEW: commit messages that are only a list of file paths become a readable line.
+            function tidyCommitMessage(raw) {
+              const first = String(raw || "").split("\n")[0].trim();
+              if (!first) return "Commit message unavailable";
+
+              const head = first.split(":")[0];
+              const looksLikePaths = (first.match(/\//g) || []).length >= 2 && !/\s/.test(head);
+
+              if (looksLikePaths) {
+                const top = first.split(/[,:\s]/)[0].split("/")[0];
+                return `Updated files in ${top}/`;
+              }
+              return first;
             }
 
             const owner = context.repo.owner;
@@ -92,14 +114,22 @@ jobs:
               repos = await github.paginate(github.rest.repos.listForUser, {
                 username: owner,
                 type: "owner",
-                sort: "updated",
+                sort: "pushed",
                 direction: "desc",
                 per_page: 100
               });
 
+              // CHANGED: hides the profile repository itself and sorts by last push.
               repos = repos
-                .filter(repo => !repo.fork && !repo.archived && !repo.private)
-                .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+                .filter(repo =>
+                  !repo.fork &&
+                  !repo.archived &&
+                  !repo.private &&
+                  repo.name.toLowerCase() !== owner.toLowerCase()
+                )
+                .sort((a, b) =>
+                  new Date(b.pushed_at || b.updated_at) - new Date(a.pushed_at || a.updated_at)
+                );
 
               reposAvailable = true;
             } catch (error) {
@@ -113,13 +143,23 @@ jobs:
                 ? latest.map(repo => {
                     const name = escapeMarkdown(repo.name);
                     const description = escapeMarkdown(
-                      repo.description || "No repository description provided yet."
+                      repo.description || "No repository description provided yet.",
+                      120
                     );
-                    const language = escapeMarkdown(repo.language || "Not specified");
-                    const updatedDate = new Date(repo.updated_at).toISOString().slice(0, 10);
+                    // CHANGED: language and stars only appear when they carry information.
+                    const language = repo.language
+                      ? ` · \`${escapeMarkdown(repo.language)}\``
+                      : "";
+                    const stars = repo.stargazers_count > 0
+                      ? ` · ⭐ ${repo.stargazers_count}`
+                      : "";
+                    const updatedDate = new Date(repo.pushed_at || repo.updated_at)
+                      .toISOString()
+                      .slice(0, 10);
 
+                    // CHANGED: <br> forces the description onto its own line on GitHub.
                     return [
-                      `- **[${name}](${repo.html_url})** · \`${language}\` · ⭐ ${repo.stargazers_count} · Updated ${updatedDate}`,
+                      `- **[${name}](${repo.html_url})**${language}${stars} · Updated ${updatedDate}<br>`,
                       `  ${description}`
                     ].join("\n");
                   }).join("\n\n")
@@ -150,8 +190,10 @@ jobs:
                   const commit = response.data[0];
                   if (!commit) continue;
 
+                  // CHANGED: path-only messages are tidied and long ones are shortened.
                   const message = escapeMarkdown(
-                    (commit.commit.message || "Commit message unavailable").split("\n")[0]
+                    tidyCommitMessage(commit.commit.message),
+                    70
                   );
                   const date = commit.commit.author?.date || commit.commit.committer?.date;
                   const day = date ? new Date(date).toISOString().slice(0, 10) : "date unavailable";
