@@ -1,165 +1,204 @@
-# Hey, I'm Chandan Kumar Mahato 👋
-
-### B.Tech CSE Student | Aspiring AI/ML Systems Engineer
-
-I'm building my foundation in Computer Science, programming and Artificial Intelligence.
-
-I believe in understanding concepts from first principles, experimenting with ideas, and learning by building.
+<h1 align="center">Hey, I'm Chandan Kumar Mahato 👋</h1>
 
 <p align="center">
-  <a href="https://github.com/chandannmahatoo">
-    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github" />
-  </a>
-  <a href="https://www.linkedin.com/in/chandannmahatoo/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" />
-  </a>
-  <a href="https://www.instagram.com/chandannmahatoo/">
-    <img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram" />
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=750&lines=B.Tech+CSE+Student;Aspiring+AI%2FML+Systems+Engineer;Learning+Computer+Science+from+First+Principles;Building+Projects+and+Exploring+AI" alt="Typing SVG" />
+</p>
+
+<p align="center">
+  Building my foundation in Computer Science, Programming and Artificial Intelligence.<br>
+  Learning through fundamentals, experimentation and practical projects.
+</p>
+
+<p align="center">
+  <a href="https://github.com/chandannmahatoo"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://www.linkedin.com/in/chandannmahatoo/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.instagram.com/chandannmahatoo/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
+  <a href="https://facebook.com/chandannmahatoo"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
+  <a href="https://leetcode.com/u/chandannmahatoo/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"></a>
+  <a href="mailto:chandannmahatoo@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=chandannmahatoo&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile views">
 </p>
 
 ---
 
-## 🎯 My Current Journey
+## 👨‍💻 About Me
 
-**Q1 | Months 1–3 | Foundations & First Builds**
+- 🎓 B.Tech Computer Science Engineering student
+- 💻 Learning C++, Python, C and Data Structures & Algorithms
+- 🤖 Exploring Artificial Intelligence and Machine Learning
+- 🔬 Interested in NLP, Deep Learning and AI Systems
+- 🏗️ Building projects and strengthening engineering fundamentals
 
-Currently focused on developing strong fundamentals before moving towards advanced AI/ML systems.
+## 🎯 Current Journey
 
-- C++ and Data Structures & Algorithms
-- Python and Programming Fundamentals
-- Mathematics for Computer Science and AI
-- Git, GitHub, Linux and Software Engineering
-- Introduction to Machine Learning and NLP
-- Building small projects and practical experiments
+<details open>
+<summary><b>Q1 | Foundations & First Builds</b></summary>
 
-**My Learning Philosophy:**
+My current priority is developing strong Computer Science fundamentals and practical engineering skills.
 
-`Learn → Understand → Implement → Experiment → Build → Improve`
+| Focus Area | Learning Goals |
+|---|---|
+| Programming | C++, Python and C |
+| DSA | Arrays, Sorting, Searching and Recursion |
+| Mathematics | Calculus, Linear Algebra and Discrete Mathematics |
+| Computer Science | Programming Fundamentals |
+| AI/ML | Data Analysis, ML Fundamentals and NLP |
+| Engineering Tools | Git, GitHub and Linux |
+
+**Learning approach:** `Learn → Understand → Implement → Experiment → Build → Improve`
+
+</details>
 
 ---
 
-## 🛠️ Technologies I'm Learning
+## 🛠️ Tech Stack
 
-**Programming**
+**Programming Languages**
 
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
+<p>
+  <img src="https://skillicons.dev/icons?i=cpp,python,c" alt="C++, Python and C">
+</p>
 
 **AI / ML & Data**
 
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+<p>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Scikit-learn">
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge" alt="Matplotlib">
+</p>
 
 **Development Tools**
 
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,jupyter" alt="Git, GitHub, VS Code and Jupyter">
+</p>
 
 ---
 
-## 🚀 What I'm Building
+## 🚀 Projects & Experiments
 
-### 1. AI-Powered Vernacular Pedagogy & Translation Tool
+### 01. AI-Powered Vernacular Pedagogy & Translation Tool
 
 Exploring an AI-powered multilingual translation solution for mother-tongue primary education through SIH 2026.
 
-**Areas of focus:**
+**Areas of focus**
 - Hindi ↔ Punjabi translation
 - English ↔ Punjabi translation
-- Translation models and API exploration
+- Translation model and API exploration
 - Voice-based interaction
 - Educational content generation
 
-**Exploring:** Python · NLP · Translation Models · APIs
+**Exploring:** `Python` `NLP` `Translation Models` `APIs`
 
-### 2. AI Sentiment & Emotion Analysis
+<sup>Currently exploring the technical approach and developing a simple working prototype.</sup>
 
-Collaborating on an NLP project focused on textual sentiment and emotion classification.
+### 02. AI Sentiment & Emotion Analysis
 
-**My focus:**
+Collaborating on an NLP-based project focused on textual sentiment and emotion classification.
+
+**My contribution**
 - Exploratory Data Analysis
 - Data preprocessing
-- Machine Learning models
+- Machine Learning experiments
 - Model evaluation
 
-**Technologies:** Python · Pandas · NumPy · Scikit-learn · NLP
+**Technologies:** `Python` `Pandas` `NumPy` `Scikit-learn` `NLP`
 
 ---
 
-## 📚 What I'm Learning
+## 📌 Featured Projects
 
-| Area | Current Focus |
-|---|---|
-| Programming | C++, Python, C |
-| DSA | Arrays, Sorting, Searching, Recursion |
-| Mathematics | Calculus, Linear Algebra, Discrete Mathematics |
-| Computer Science | Programming Fundamentals |
-| AI/ML | Data Analysis, ML Fundamentals, NLP |
-| Engineering Tools | Git, GitHub, Linux |
+> Add your best project links here when their repositories are ready. Keep this section curated; the Latest Repositories section below updates automatically.
+
+| Project | What it demonstrates | Repository |
+|---|---|---|
+| AI Vernacular Translation | NLP, multilingual translation and prototype engineering | [Add repository link](https://github.com/chandannmahatoo) |
+| AI Sentiment & Emotion Analysis | EDA, preprocessing and ML evaluation | [Add repository link](https://github.com/chandannmahatoo) |
 
 ---
 
-## 📊 GitHub Activity
+## 🆕 Latest Repositories
+
+<!-- REPOSITORIES:START -->
+_This section is updated automatically by GitHub Actions._
+<!-- REPOSITORIES:END -->
+
+---
+
+## 📚 Currently Learning
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=chandannmahatoo&show_icons=true&hide_border=true&theme=transparent" height="160" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chandannmahatoo&layout=compact&hide_border=true&theme=transparent" height="160" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=chandannmahatoo&hide_border=true&theme=transparent" height="160" />
-</p>
-
----
-
-## 🌱 My Long-Term Vision
-
-My long-term goal is to become an **AI/ML Systems Engineer** and eventually contribute to research and the development of impactful AI systems.
-
-**My Journey:**
-
-`Student → AI Engineer → Researcher → Innovator → Leader → Global Contributor`
-
-I want to understand the complete AI stack:
-
-`Mathematics → Algorithms → Machine Learning → Deep Learning → AI Systems → Infrastructure`
-
----
-
-## 🤝 Let's Connect
-
-<p align="center">
-  <a href="https://github.com/chandannmahatoo">
-    <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/chandannmahatoo/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://www.instagram.com/chandannmahatoo/">
-    <img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
-  </a>
-  <a href="https://facebook.com/chandannmahatoo">
-    <img src="https://img.shields.io/badge/Facebook-Follow-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
-  </a>
-  <a href="https://leetcode.com/u/chandannmahatoo/">
-    <img src="https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
-  </a>
-  <a href="mailto:chandannmahatoo@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
+  <img src="https://img.shields.io/badge/C++-Programming-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/DSA-Problem%20Solving-239120?style=flat-square" alt="DSA">
+  <img src="https://img.shields.io/badge/Python-Programming-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Machine%20Learning-Foundations-F7931E?style=flat-square" alt="Machine Learning">
+  <img src="https://img.shields.io/badge/NLP-Exploration-8A2BE2?style=flat-square" alt="NLP">
+  <img src="https://img.shields.io/badge/Linux-Learning-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux">
 </p>
 
 ---
 
+## 📊 GitHub Analytics
+
 <p align="center">
-  <b>LEARN · BUILD · RESEARCH · SHARE · IMPACT</b>
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=chandannmahatoo&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" alt="GitHub statistics">
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chandannmahatoo&layout=compact&hide_border=true&theme=transparent" alt="Most used languages">
 </p>
 
 <p align="center">
-  One concept at a time. One project at a time.
+  <img src="https://streak-stats.demolab.com?user=chandannmahatoo&hide_border=true&theme=transparent" alt="GitHub contribution streak">
 </p>
+
+### Contribution Activity
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=chandannmahatoo&theme=github-compact&hide_border=true" alt="GitHub contribution activity">
+</p>
+
+### Contribution Snake
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chandannmahatoo/chandannmahatoo/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/chandannmahatoo/chandannmahatoo/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/chandannmahatoo/chandannmahatoo/output/github-contribution-grid-snake.svg">
+  </picture>
+</p>
+
+---
+
+## ⏱️ Coding Time (WakaTime)
+
+<!-- WAKATIME:START -->
+_Add your WakaTime public profile or stats card here after setting up WakaTime. See SETUP.md._
+<!-- WAKATIME:END -->
+
+---
+
+## 🌱 Long-Term Vision
+
+My goal is to become an **AI/ML Systems Engineer**, develop deep technical expertise, and eventually contribute to AI research and impactful intelligent systems.
+
+**My journey:** `Student → AI Engineer → Researcher → Innovator → Leader → Global Contributor`
+
+**The AI stack:** `Mathematics → Algorithms → Machine Learning → Deep Learning → AI Systems → Infrastructure`
+
+---
+
+## 🤝 Connect With Me
+
+<p align="center">
+  <a href="https://github.com/chandannmahatoo"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://www.linkedin.com/in/chandannmahatoo/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.instagram.com/chandannmahatoo/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
+  <a href="https://facebook.com/chandannmahatoo"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
+  <a href="https://leetcode.com/u/chandannmahatoo/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"></a>
+  <a href="mailto:chandannmahatoo@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
+
+<p align="center"><b>LEARN · BUILD · RESEARCH · EXPERIMENT · IMPROVE</b></p>
+<p align="center">One concept at a time. One project at a time. 🚀</p>
