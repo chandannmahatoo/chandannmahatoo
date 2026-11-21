@@ -59,8 +59,6 @@
 
 ## Tech Stack
 
-## Tech Stack
-
 <div align="center">
 
 ### Programming Languages
@@ -171,6 +169,7 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 </tr>
 </table>
 
+
 ## Latest Repositories
 
 <div align="center">
@@ -181,32 +180,17 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 </div>
 
 <!-- REPOSITORIES:START -->
-- **[AI-Sentiment](https://github.com/chandannmahatoo/AI-Sentiment)** · `Python` · ⭐ 0 · Updated 2026-11-21
-  No repository description provided yet.
-
-- **[ThermaGuard-AI](https://github.com/chandannmahatoo/ThermaGuard-AI)** · `Python` · ⭐ 0 · Updated 2026-09-13
-  AI-powered geospatial intelligence platform for detecting, classifying, and monitoring industrial fires and persistent thermal anomalies using NASA FIRMS, satellite data, geospati…
-
-- **[chandan-portfolio](https://github.com/chandannmahatoo/chandan-portfolio)** · `TypeScript` · ⭐ 0 · Updated 2026-09-02
-  No repository description provided yet.
-
-- **[chandannmahatoo](https://github.com/chandannmahatoo/chandannmahatoo)** · `Not specified` · ⭐ 0 · Updated 2026-08-28
-  Aspiring AI/ML Systems Engineer \| Building AI from First Principles 🚀
-
-- **[git-hooks-automation-suite](https://github.com/chandannmahatoo/git-hooks-automation-suite)** · `Python` · ⭐ 0 · Updated 2026-07-01
-  Git hooks are automated scripts that run at specific points during Git's workflow. They let you customize Git's behavior and enforce policies, run tests, or perform other actions …
+<ul><li><a href="https://github.com/chandannmahatoo/AI-Sentiment"><b>AI-Sentiment</b></a> · <code>Python</code> · <sub>updated 2026-11-21</sub><br><sub><i>No description yet.</i></sub></li><li><a href="https://github.com/chandannmahatoo/ThermaGuard-AI"><b>ThermaGuard-AI</b></a> · <code>Python</code> · <sub>updated 2026-09-13</sub><br><sub>AI-powered geospatial intelligence platform for detecting, classifying, and monitoring industrial fires and persistent…</sub></li><li><a href="https://github.com/chandannmahatoo/chandan-portfolio"><b>chandan-portfolio</b></a> · <code>TypeScript</code> · <sub>updated 2026-09-02</sub><br><sub><i>No description yet.</i></sub></li><li><a href="https://github.com/chandannmahatoo/git-hooks-automation-suite"><b>git-hooks-automation-suite</b></a> · <code>Python</code> · <sub>updated 2026-07-01</sub><br><sub>Git hooks are automated scripts that run at specific points during Git's workflow. They let you customize Git's behavior and…</sub></li></ul>
 <!-- REPOSITORIES:END -->
 
 <div align="center">
-  <sub>Automatically refreshed with my most recently updated public repositories.</sub>
+  <sub>Refreshed automatically with my most recently updated public repositories.</sub>
 </div>
 
 ## Recent Repository Activity
 
 <!-- RECENT_COMMITS:START -->
-- **[AI-Sentiment](https://github.com/chandannmahatoo/AI-Sentiment)** · [f5c7fd9](https://github.com/chandannmahatoo/AI-Sentiment/commit/f5c7fd9322190ade06e35f250bfd82448e77afd7) · models/transformer/dataset1/best_model/model.safetensors,models/transformer/dataset2/pilot/head/model.safetensors,models/transformer/dataset2/pilot/head_tail/model.safetensors: co… · 2026-11-21
-- **[ThermaGuard-AI](https://github.com/chandannmahatoo/ThermaGuard-AI)** · [3ecb78d](https://github.com/chandannmahatoo/ThermaGuard-AI/commit/3ecb78dc64513101979321aa13e2bc4858c25b04) · Create SECURITY.md · 2026-09-13
-- **[chandan-portfolio](https://github.com/chandannmahatoo/chandan-portfolio)** · [6b477bf](https://github.com/chandannmahatoo/chandan-portfolio/commit/6b477bf25e11327a193e961abc9317423c72c7f1) · Final version · 2026-09-02
+<ul><li><a href="https://github.com/chandannmahatoo/AI-Sentiment"><b>AI-Sentiment</b></a> · <a href="https://github.com/chandannmahatoo/AI-Sentiment/commit/f5c7fd9322190ade06e35f250bfd82448e77afd7"><code>f5c7fd9</code></a> · Updated files in models/ · <sub>2026-11-21</sub></li><li><a href="https://github.com/chandannmahatoo/ThermaGuard-AI"><b>ThermaGuard-AI</b></a> · <a href="https://github.com/chandannmahatoo/ThermaGuard-AI/commit/3ecb78dc64513101979321aa13e2bc4858c25b04"><code>3ecb78d</code></a> · Create SECURITY.md · <sub>2026-09-13</sub></li><li><a href="https://github.com/chandannmahatoo/chandan-portfolio"><b>chandan-portfolio</b></a> · <a href="https://github.com/chandannmahatoo/chandan-portfolio/commit/6b477bf25e11327a193e961abc9317423c72c7f1"><code>6b477bf</code></a> · Final version · <sub>2026-09-02</sub></li></ul>
 <!-- RECENT_COMMITS:END -->
 
 ## GitHub Analytics
