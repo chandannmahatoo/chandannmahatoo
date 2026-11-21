@@ -18,7 +18,7 @@ jobs:
       - name: Checkout profile repository
         uses: actions/checkout@v6
 
-      # Step 2: Generate repository cards
+      # Step 2: Generate responsive repository cards
       - name: Update README repository cards
         uses: actions/github-script@v8
         with:
@@ -48,7 +48,7 @@ jobs:
               return;
             }
 
-            // Escape HTML to safely display repository metadata
+            // Escape HTML
             function escapeHtml(value) {
               return String(value ?? "")
                 .replace(/&/g, "&amp;")
@@ -58,10 +58,9 @@ jobs:
                 .replace(/'/g, "&#39;");
             }
 
-            // Get GitHub username
+            // Fetch public repositories
             const owner = context.repo.owner;
 
-            // Fetch public repositories
             const { data: repos } =
               await github.rest.repos.listForUser({
                 username: owner,
@@ -71,7 +70,7 @@ jobs:
                 per_page: 100
               });
 
-            // Filter repositories and select latest five
+            // Select latest five eligible repositories
             const visible = repos
               .filter(repo =>
                 !repo.fork &&
@@ -85,7 +84,7 @@ jobs:
               )
               .slice(0, 5);
 
-            // Generate repository cards
+            // Generate full-width repository cards
             const cards = visible.map(repo => {
               const name = escapeHtml(repo.name);
 
@@ -110,31 +109,19 @@ jobs:
 
               const url = escapeHtml(repo.html_url);
 
-              return `<td width="50%" valign="top"><div align="center"><h3><a href="${url}">${name}</a></h3><p>${description}</p><p><img src="https://img.shields.io/badge/Language-${languageBadge}-2563EB?style=flat-square" alt="Language: ${language}"> <img src="https://img.shields.io/badge/Stars-${stars}-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: ${stars}"></p><p><sub>Last updated: ${updated}</sub></p><p><a href="${url}">View Repository ↗</a></p></div></td>`;
+              return `<tr><td width="100%"><div align="left"><h3><a href="${url}">📁 ${name}</a></h3><p>${description}</p><p><img src="https://img.shields.io/badge/Language-${languageBadge}-2563EB?style=flat-square" alt="Language: ${language}"> <img src="https://img.shields.io/badge/Stars-${stars}-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: ${stars}"></p><p><sub>🕒 Last updated: ${updated}</sub></p><p><a href="${url}">View Repository ↗</a></p></div></td></tr>`;
             });
 
-            // Arrange cards into two-column rows
-            const rows = [];
-
-            for (let i = 0; i < cards.length; i += 2) {
-              const first = cards[i];
-
-              const second =
-                cards[i + 1] || '<td width="50%"></td>';
-
-              rows.push(`<tr>${first}${second}</tr>`);
-            }
-
-            // Generate final HTML section
+            // Build full-width vertical layout
             const section = visible.length
-              ? `<table><tbody>${rows.join("")}</tbody></table>`
+              ? `<table><tbody>${cards.join("")}</tbody></table>`
               : '<p align="center"><i>No public repositories found yet.</i></p>';
 
             // Replace content between markers
             const contentStart = startIndex + start.length;
             const contentEnd = endIndex;
 
-            const updated =
+            const updatedReadme =
               readme.slice(0, contentStart) +
               "\n" +
               section +
@@ -142,7 +129,7 @@ jobs:
               readme.slice(contentEnd);
 
             // Skip if no changes
-            if (updated === readme) {
+            if (updatedReadme === readme) {
               core.info(
                 "Repository cards are already up to date. No changes required."
               );
@@ -150,10 +137,10 @@ jobs:
             }
 
             // Write updated README
-            fs.writeFileSync(path, updated, "utf8");
+            fs.writeFileSync(path, updatedReadme, "utf8");
 
             core.info(
-              `Successfully generated ${visible.length} repository cards.`
+              `Successfully generated ${visible.length} full-width repository cards.`
             );
 
       # Step 3: Commit and push changes
@@ -165,7 +152,7 @@ jobs:
 
             git add README.md
 
-            git commit -m "chore: update latest repository cards"
+            git commit -m "chore: improve latest repository layout"
 
             git push
           else
