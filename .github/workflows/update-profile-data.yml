@@ -61,7 +61,8 @@ jobs:
                 + source.slice(endIndex);
             }
 
-            // CHANGED: shortens at a word boundary so text never ends mid-word.
+            // HELPERS-START
+            // Shortens at a word boundary so text never ends mid-word.
             function cleanText(value, maxLength = 180) {
               const text = String(value || "")
                 .replace(/[\r\n\t]+/g, " ")
@@ -75,7 +76,7 @@ jobs:
               return (space > maxLength * 0.6 ? cut.slice(0, space) : cut).trimEnd() + "…";
             }
 
-            // CHANGED: optional length argument; also escapes * < > so text cannot break the layout.
+            // Optional length argument; also escapes * < > so text cannot break the layout.
             function escapeMarkdown(value, maxLength = 180) {
               return cleanText(value, maxLength)
                 .replace(/\\/g, "\\\\")
@@ -88,7 +89,7 @@ jobs:
                 .replace(/\]/g, "\\]");
             }
 
-            // NEW: commit messages that are only a list of file paths become a readable line.
+            // Commit messages that are only a list of file paths become a readable line.
             function tidyCommitMessage(raw) {
               const first = String(raw || "").split("\n")[0].trim();
               if (!first) return "Commit message unavailable";
@@ -102,6 +103,54 @@ jobs:
               }
               return first;
             }
+
+            // NEW: whole days since a date.
+            function daysSince(dateValue) {
+              return Math.floor((Date.now() - new Date(dateValue).getTime()) / 86400000);
+            }
+
+            // NEW: human-friendly relative time ("yesterday", "3 days ago", "2 months ago").
+            function relativeTime(dateValue) {
+              const days = daysSince(dateValue);
+              if (days < 1) return "today";
+              if (days === 1) return "yesterday";
+              if (days < 14) return `${days} days ago`;
+              if (days < 60) return `${Math.floor(days / 7)} weeks ago`;
+              if (days < 365) return `${Math.floor(days / 30)} months ago`;
+              const years = Math.floor(days / 365);
+              return years === 1 ? "1 year ago" : `${years} years ago`;
+            }
+
+            // NEW: freshness indicator from the last push date.
+            function freshnessDot(dateValue) {
+              const days = daysSince(dateValue);
+              if (days <= 14) return "🟢";
+              if (days <= 60) return "🟡";
+              return "⚪";
+            }
+
+            // NEW: small language badge. Unknown languages fall back to a neutral grey badge.
+            const LANGUAGE_STYLES = {
+              "Python": ["3776AB", "python", "white"],
+              "TypeScript": ["3178C6", "typescript", "white"],
+              "JavaScript": ["F7DF1E", "javascript", "black"],
+              "C++": ["00599C", "cplusplus", "white"],
+              "C": ["A8B9CC", "c", "black"],
+              "Jupyter Notebook": ["F37626", "jupyter", "white"],
+              "HTML": ["E34F26", "html5", "white"],
+              "CSS": ["1572B6", null, "white"],
+              "Shell": ["4EAA25", "gnubash", "white"]
+            };
+
+            function languageBadge(language) {
+              if (!language) return "";
+              const [color, logo, logoColor] = LANGUAGE_STYLES[language] || ["6E7681", null, "white"];
+              const label = encodeURIComponent(language).replace(/-/g, "--").replace(/_/g, "__");
+              const logoPart = logo ? `&logo=${logo}&logoColor=${logoColor}` : "";
+              const alt = language.replace(/[\[\]\\]/g, "");
+              return `![${alt}](https://img.shields.io/badge/${label}-${color}?style=flat-square${logoPart})`;
+            }
+            // HELPERS-END
 
             const owner = context.repo.owner;
             const repoName = context.repo.repo;
@@ -142,26 +191,27 @@ jobs:
               const repoContent = latest.length
                 ? latest.map(repo => {
                     const name = escapeMarkdown(repo.name);
-                    const description = escapeMarkdown(
-                      repo.description || "No repository description provided yet.",
-                      120
-                    );
-                    // CHANGED: language and stars only appear when they carry information.
-                    const language = repo.language
-                      ? ` · \`${escapeMarkdown(repo.language)}\``
-                      : "";
+                    const hasDescription = Boolean(repo.description && repo.description.trim());
+                    const description = hasDescription
+                      ? escapeMarkdown(repo.description, 120)
+                      : "<i>No repository description provided yet.</i>";
+                    const pushedAt = repo.pushed_at || repo.updated_at;
+                    const badge = languageBadge(repo.language);
                     const stars = repo.stargazers_count > 0
                       ? ` · ⭐ ${repo.stargazers_count}`
                       : "";
-                    const updatedDate = new Date(repo.pushed_at || repo.updated_at)
-                      .toISOString()
-                      .slice(0, 10);
+                    const topics = (repo.topics || [])
+                      .slice(0, 4)
+                      .map(topic => `\`${escapeMarkdown(topic, 30)}\``)
+                      .join(" ");
 
-                    // CHANGED: <br> forces the description onto its own line on GitHub.
-                    return [
-                      `- **[${name}](${repo.html_url})**${language}${stars} · Updated ${updatedDate}<br>`,
-                      `  ${description}`
-                    ].join("\n");
+                    // NEW: freshness dot, language badge and relative time; <br> keeps lines separate on GitHub.
+                    const lines = [
+                      `- ${freshnessDot(pushedAt)} **[${name}](${repo.html_url})**${badge ? " " + badge : ""}${stars} · pushed ${relativeTime(pushedAt)}<br>`,
+                      `  ${description}${topics ? "<br>" : ""}`
+                    ];
+                    if (topics) lines.push(`  ${topics}`);
+                    return lines.join("\n");
                   }).join("\n\n")
                 : "<sub>No public, non-fork, non-archived repositories were found.</sub>";
 
@@ -172,6 +222,23 @@ jobs:
                 repoContent,
                 "Latest repositories"
               );
+
+              // NEW (optional): one-line summary. Runs only if the REPO_SUMMARY markers exist in README.md.
+              if (updated.includes("<!-- REPO_SUMMARY:START -->")) {
+                const active = repos.filter(repo => daysSince(repo.pushed_at || repo.updated_at) <= 14).length;
+                const total = repos.length;
+                const summary = total
+                  ? `<sub><b>${total}</b> public ${total === 1 ? "repository" : "repositories"} · <b>${active}</b> active in the last 14 days · last push <b>${relativeTime(repos[0].pushed_at || repos[0].updated_at)}</b></sub>`
+                  : "<sub>No public repositories yet.</sub>";
+
+                updated = replaceMarkedBlock(
+                  updated,
+                  "<!-- REPO_SUMMARY:START -->",
+                  "<!-- REPO_SUMMARY:END -->",
+                  summary,
+                  "Repository summary"
+                );
+              }
             }
 
             // 2) Latest commit for the three most recently updated public repositories.
@@ -196,11 +263,11 @@ jobs:
                     70
                   );
                   const date = commit.commit.author?.date || commit.commit.committer?.date;
-                  const day = date ? new Date(date).toISOString().slice(0, 10) : "date unavailable";
+                  const when = date ? relativeTime(date) : "date unavailable";
                   const shortSha = commit.sha.slice(0, 7);
 
                   commitLines.push(
-                    `- **[${escapeMarkdown(repo.name)}](${repo.html_url})** · [${shortSha}](${commit.html_url}) · ${message} · ${day}`
+                    `- **[${escapeMarkdown(repo.name)}](${repo.html_url})** · [\`${shortSha}\`](${commit.html_url}) · ${message} · ${when}`
                   );
                 } catch (error) {
                   core.warning(`Could not fetch latest commit for ${repo.name}: ${error.message}`);
