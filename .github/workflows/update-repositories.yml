@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v6
 
       # Step 2: Fetch repositories and update README
-      - name: Update README repository list
+      - name: Update README repository cards
         uses: actions/github-script@v8
         with:
           script: |
@@ -48,10 +48,20 @@ jobs:
               return;
             }
 
+            // Escape HTML to safely display repository metadata
+            function escapeHtml(value) {
+              return String(value ?? "")
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#39;");
+            }
+
             // Get GitHub username
             const owner = context.repo.owner;
 
-            // Fetch repositories
+            // Fetch public repositories
             const { data: repos } =
               await github.rest.repos.listForUser({
                 username: owner,
@@ -61,48 +71,123 @@ jobs:
                 per_page: 100
               });
 
-            // Filter and select latest 8 public repositories
+            // Filter repositories and select the latest five
             const visible = repos
               .filter(repo =>
                 !repo.fork &&
                 !repo.archived &&
                 !repo.private
               )
-              .slice(0, 8);
+              .sort(
+                (a, b) =>
+                  new Date(b.updated_at) - new Date(a.updated_at)
+              )
+              .slice(0, 5);
 
-            // Generate repository list
+            // Generate repository cards
+            const cards = visible.map(repo => {
+              const name = escapeHtml(repo.name);
+
+              const description = escapeHtml(
+                repo.description ||
+                "Explore this repository and its development."
+              );
+
+              const language = escapeHtml(
+                repo.language || "Not specified"
+              );
+
+              const languageBadge = encodeURIComponent(
+                repo.language || "Not specified"
+              );
+
+              const stars = repo.stargazers_count;
+
+              const updated = new Date(repo.updated_at)
+                .toISOString()
+                .slice(0, 10);
+
+              const url = escapeHtml(repo.html_url);
+
+              return `
+              <td width="50%" valign="top">
+                <div align="center">
+
+                  <h3>
+                    <a href="${url}">${name}</a>
+                  </h3>
+
+                  <p>${description}</p>
+
+                  <p>
+                    <img
+                      src="https://img.shields.io/badge/Language-${languageBadge}-2563EB?style=flat-square"
+                      alt="Language: ${language}"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/Stars-${stars}-F59E0B?style=flat-square&logo=github&logoColor=white"
+                      alt="Stars: ${stars}"
+                    />
+                  </p>
+
+                  <p>
+                    <sub>Last updated: ${updated}</sub>
+                  </p>
+
+                  <p>
+                    <a href="${url}">View Repository ↗</a>
+                  </p>
+
+                </div>
+              </td>
+              `;
+            });
+
+            // Arrange cards in two-column rows
+            const rows = [];
+
+            for (let i = 0; i < cards.length; i += 2) {
+              const first = cards[i];
+              const second = cards[i + 1] || '<td width="50%"></td>';
+
+              rows.push(`
+              <tr>
+                ${first}
+                ${second}
+              </tr>
+              `);
+            }
+
+            // Build the final HTML section
             const section = visible.length
-              ? visible.map(repo => {
-                  const description = repo.description
-                    ? repo.description
-                        .replace(/\r?\n/g, " ")
-                        .replace(/\|/g, "\\|")
-                    : "No description provided yet.";
-
-                  const language =
-                    repo.language || "Not specified";
-
-                  return (
-                    `- **[${repo.name}](${repo.html_url})** — ${description}  \n` +
-                    `  \`${language}\` · ⭐ ${repo.stargazers_count} · Updated: ${repo.updated_at.slice(0, 10)}`
-                  );
-                }).join("\n")
-              : "_No public repositories found yet._";
+              ? `
+            <table>
+              <tbody>
+                ${rows.join("\n")}
+              </tbody>
+            </table>
+            `
+              : `
+            <p align="center">
+              <i>No public repositories found yet.</i>
+            </p>
+            `;
 
             // Replace content between markers
             const contentStart = startIndex + start.length;
+            const contentEnd = endIndex;
 
             const updated =
               readme.slice(0, contentStart) +
               "\n" +
               section +
               "\n" +
-              readme.slice(endIndex);
+              readme.slice(contentEnd);
 
             // Skip writing if nothing changed
             if (updated === readme) {
               core.info(
-                "Repository list is already up to date. No changes required."
+                "Repository cards are already up to date. No changes required."
               );
               return;
             }
@@ -111,7 +196,7 @@ jobs:
             fs.writeFileSync(path, updated, "utf8");
 
             core.info(
-              `Successfully updated README with ${visible.length} repositories.`
+              `Successfully updated README with ${visible.length} repository cards.`
             );
 
       # Step 3: Commit and push changes
@@ -123,7 +208,7 @@ jobs:
 
             git add README.md
 
-            git commit -m "chore: update latest repositories"
+            git commit -m "chore: update latest repository cards"
 
             git push
           else
