@@ -14,65 +14,118 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout the profile repository
       - name: Checkout profile repository
         uses: actions/checkout@v6
 
+      # Step 2: Fetch repositories and update README
       - name: Update README repository list
         uses: actions/github-script@v8
         with:
           script: |
             const fs = require("fs");
+
             const path = "README.md";
             const start = "<!-- REPOSITORIES:START -->";
             const end = "<!-- REPOSITORIES:END -->";
 
+            // Read README
             const readme = fs.readFileSync(path, "utf8");
-            const owner = context.repo.owner;
 
-            const { data: repos } = await github.rest.repos.listForUser({
-              username: owner,
-              type: "owner",
-              sort: "updated",
-              direction: "desc",
-              per_page: 100
-            });
+            // Find README markers
+            const startIndex = readme.indexOf(start);
+            const endIndex = readme.indexOf(end);
 
-            const visible = repos
-              .filter(repo => !repo.fork && !repo.archived && !repo.private)
-              .slice(0, 8);
-
-            const section = visible.length
-              ? visible.map(repo => {
-                  const description = repo.description
-                    ? repo.description.replace(/\r?\n/g, " ").replace(/\|/g, "\\|")
-                    : "No description provided yet.";
-
-                  const language = repo.language || "Not specified";
-
-                  return `- **[${repo.name}](${repo.html_url})** — ${description}  \n  \`${language}\` · ⭐ ${repo.stargazers_count} · Updated: ${repo.updated_at.slice(0, 10)}`;
-                }).join("\n")
-              : "_No public repositories found yet._";
-
-            const updated = readme.replace(
-              new RegExp(`${start}[\\s\\S]*?${end}`),
-              `${start}\n${section}\n${end}`
-            );
-
-            if (updated === readme) {
-              core.setFailed("README markers were not found or no content changed.");
+            // Validate markers
+            if (
+              startIndex === -1 ||
+              endIndex === -1 ||
+              endIndex < startIndex
+            ) {
+              core.setFailed(
+                "Repository markers are missing or incorrectly ordered in README.md."
+              );
               return;
             }
 
-            fs.writeFileSync(path, updated);
+            // Get GitHub username
+            const owner = context.repo.owner;
 
+            // Fetch repositories
+            const { data: repos } =
+              await github.rest.repos.listForUser({
+                username: owner,
+                type: "owner",
+                sort: "updated",
+                direction: "desc",
+                per_page: 100
+              });
+
+            // Filter and select latest 8 public repositories
+            const visible = repos
+              .filter(repo =>
+                !repo.fork &&
+                !repo.archived &&
+                !repo.private
+              )
+              .slice(0, 8);
+
+            // Generate repository list
+            const section = visible.length
+              ? visible.map(repo => {
+                  const description = repo.description
+                    ? repo.description
+                        .replace(/\r?\n/g, " ")
+                        .replace(/\|/g, "\\|")
+                    : "No description provided yet.";
+
+                  const language =
+                    repo.language || "Not specified";
+
+                  return (
+                    `- **[${repo.name}](${repo.html_url})** — ${description}  \n` +
+                    `  \`${language}\` · ⭐ ${repo.stargazers_count} · Updated: ${repo.updated_at.slice(0, 10)}`
+                  );
+                }).join("\n")
+              : "_No public repositories found yet._";
+
+            // Replace content between markers
+            const contentStart = startIndex + start.length;
+
+            const updated =
+              readme.slice(0, contentStart) +
+              "\n" +
+              section +
+              "\n" +
+              readme.slice(endIndex);
+
+            // Skip writing if nothing changed
+            if (updated === readme) {
+              core.info(
+                "Repository list is already up to date. No changes required."
+              );
+              return;
+            }
+
+            // Save updated README
+            fs.writeFileSync(path, updated, "utf8");
+
+            core.info(
+              `Successfully updated README with ${visible.length} repositories.`
+            );
+
+      # Step 3: Commit and push changes
       - name: Commit updated README
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
             git add README.md
+
             git commit -m "chore: update latest repositories"
+
             git push
           else
-            echo "README is already up to date."
+            echo "README is already up to date. No commit required."
           fi
