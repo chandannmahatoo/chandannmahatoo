@@ -160,7 +160,16 @@ Geospatial intelligence project exploring industrial fire and persistent thermal
 ## 🆕 Latest Repositories
 
 <!-- REPOSITORIES:START -->
-_This section is updated automatically by GitHub Actions._
+- **[AI-Sentiment](https://github.com/chandannmahatoo/AI-Sentiment)** — No description provided yet.  
+  `Python` · ⭐ 0 · Updated: 2026-11-21
+- **[ThermaGuard-AI](https://github.com/chandannmahatoo/ThermaGuard-AI)** — AI-powered geospatial intelligence platform for detecting, classifying, and monitoring industrial fires and persistent thermal anomalies using NASA FIRMS, satellite data, geospatial context, and explainable AI.  
+  `Python` · ⭐ 0 · Updated: 2026-09-13
+- **[chandan-portfolio](https://github.com/chandannmahatoo/chandan-portfolio)** — No description provided yet.  
+  `TypeScript` · ⭐ 0 · Updated: 2026-09-02
+- **[chandannmahatoo](https://github.com/chandannmahatoo/chandannmahatoo)** — Aspiring AI/ML Systems Engineer \| Building AI from First Principles 🚀  
+  `Not specified` · ⭐ 0 · Updated: 2026-08-28
+- **[git-hooks-automation-suite](https://github.com/chandannmahatoo/git-hooks-automation-suite)** — Git hooks are automated scripts that run at specific points during Git's workflow. They let you customize Git's behavior and enforce policies, run tests, or perform other actions automatically.  
+  `Python` · ⭐ 0 · Updated: 2026-07-01
 <!-- REPOSITORIES:END -->
 
 ---
