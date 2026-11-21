@@ -183,7 +183,7 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 <br><br>
 
 <!-- REPO_SUMMARY:START -->
-<sub>Repository statistics will appear here after the workflow runs.</sub>
+<sub><b>4</b> public repositories &nbsp;·&nbsp; <b>1</b> active in the last 14 days &nbsp;·&nbsp; Last push today</sub>
 <!-- REPO_SUMMARY:END -->
 
 <br>
@@ -197,7 +197,40 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 </div>
 
 <!-- REPOSITORIES:START -->
-<sub>Latest repositories will appear here after the workflow runs.</sub>
+<table>
+<tr>
+<td width="50%" valign="top">
+  <h3>🚀 <a href="https://github.com/chandannmahatoo/AI-Sentiment">AI-Sentiment</a></h3>
+  <p>An independent project and engineering workspace.</p>
+  <p><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"></p>
+  <sub>🟢 Updated today</sub><br>
+  <a href="https://github.com/chandannmahatoo/AI-Sentiment"><strong>Explore repository ↗</strong></a>
+</td>
+<td width="50%" valign="top">
+  <h3>🚀 <a href="https://github.com/chandannmahatoo/ThermaGuard-AI">ThermaGuard-AI</a></h3>
+  <p>AI-powered geospatial intelligence platform for detecting, classifying, and monitoring industrial fires and persistent thermal anomalies using NASA…</p>
+  <p><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"></p>
+  <sub>⚪ Updated 2 months ago</sub><br>
+  <a href="https://github.com/chandannmahatoo/ThermaGuard-AI"><strong>Explore repository ↗</strong></a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <h3>🚀 <a href="https://github.com/chandannmahatoo/chandan-portfolio">chandan-portfolio</a></h3>
+  <p>An independent project and engineering workspace.</p>
+  <p><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"></p>
+  <sub>⚪ Updated 2 months ago</sub><br>
+  <a href="https://github.com/chandannmahatoo/chandan-portfolio"><strong>Explore repository ↗</strong></a>
+</td>
+<td width="50%" valign="top">
+  <h3>🚀 <a href="https://github.com/chandannmahatoo/git-hooks-automation-suite">git-hooks-automation-suite</a></h3>
+  <p>Git hooks are automated scripts that run at specific points during Git&#39;s workflow. They let you customize Git&#39;s behavior and enforce policies, run…</p>
+  <p><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"></p>
+  <sub>⚪ Updated 4 months ago</sub><br>
+  <a href="https://github.com/chandannmahatoo/git-hooks-automation-suite"><strong>Explore repository ↗</strong></a>
+</td>
+</tr>
+</table>
 <!-- REPOSITORIES:END -->
 
 <div align="center">
@@ -209,7 +242,29 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 ## 🛠️ Recent Repository Activity
 
 <!-- RECENT_COMMITS:START -->
-<sub>Recent commits will appear here after the workflow runs.</sub>
+<table>
+<thead><tr><th>Repository</th><th>Commit</th><th>Latest change</th><th>When</th></tr></thead>
+<tbody>
+<tr>
+  <td><strong><a href="https://github.com/chandannmahatoo/AI-Sentiment">AI-Sentiment</a></strong></td>
+  <td><a href="https://github.com/chandannmahatoo/AI-Sentiment/commit/f5c7fd9322190ade06e35f250bfd82448e77afd7"><code>f5c7fd9</code></a></td>
+  <td>Updated files in models/</td>
+  <td><sub>today</sub></td>
+</tr>
+<tr>
+  <td><strong><a href="https://github.com/chandannmahatoo/ThermaGuard-AI">ThermaGuard-AI</a></strong></td>
+  <td><a href="https://github.com/chandannmahatoo/ThermaGuard-AI/commit/3ecb78dc64513101979321aa13e2bc4858c25b04"><code>3ecb78d</code></a></td>
+  <td>Create SECURITY.md</td>
+  <td><sub>2 months ago</sub></td>
+</tr>
+<tr>
+  <td><strong><a href="https://github.com/chandannmahatoo/chandan-portfolio">chandan-portfolio</a></strong></td>
+  <td><a href="https://github.com/chandannmahatoo/chandan-portfolio/commit/6b477bf25e11327a193e961abc9317423c72c7f1"><code>6b477bf</code></a></td>
+  <td>Final version</td>
+  <td><sub>2 months ago</sub></td>
+</tr>
+</tbody>
+</table>
 <!-- RECENT_COMMITS:END -->
 
 <div align="center">
