@@ -180,8 +180,6 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 </a>
 <img src="https://img.shields.io/badge/LIVE-AUTO--UPDATED-238636?style=for-the-badge&logo=githubactions&logoColor=white" alt="Automatically updated with GitHub Actions">
 
-<br><br>
-
 <!-- REPO_SUMMARY:START -->
 <sub><b>4</b> public repositories &nbsp;·&nbsp; <b>1</b> active in the last 14 days &nbsp;·&nbsp; Last push today</sub>
 <!-- REPO_SUMMARY:END -->
