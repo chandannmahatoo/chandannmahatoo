@@ -177,32 +177,36 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 <a href="https://github.com/chandannmahatoo?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-ALL%20REPOSITORIES-164E63?style=for-the-badge&logo=github&logoColor=white" alt="Explore all repositories"></a>
 <img src="https://img.shields.io/badge/AUTO--UPDATED-GITHUB%20ACTIONS-2563EB?style=for-the-badge&logo=githubactions&logoColor=white" alt="Automatically updated with GitHub Actions">
 
+<br><br>
+
+<!-- REPO_SUMMARY:START -->
+<sub><b>4</b> public repositories · <b>1</b> active in the last 14 days · last push <b>yesterday</b></sub>
+<!-- REPO_SUMMARY:END -->
+
+<sub>🟢 pushed in the last 14 days · 🟡 last 60 days · ⚪ older</sub>
+
 </div>
 
 <!-- REPOSITORIES:START -->
-- **[AI-Sentiment](https://github.com/chandannmahatoo/AI-Sentiment)** · `Python` · Updated 2026-11-21<br>
-  No repository description provided yet.
+- 🟢 **[AI-Sentiment](https://github.com/chandannmahatoo/AI-Sentiment)** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) · pushed yesterday<br>
+  <i>No repository description provided yet.</i>
 
-- **[ThermaGuard-AI](https://github.com/chandannmahatoo/ThermaGuard-AI)** · `Python` · Updated 2026-09-13<br>
+- ⚪ **[ThermaGuard-AI](https://github.com/chandannmahatoo/ThermaGuard-AI)** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) · pushed 2 months ago<br>
   AI-powered geospatial intelligence platform for detecting, classifying, and monitoring industrial fires and persistent…
 
-- **[chandan-portfolio](https://github.com/chandannmahatoo/chandan-portfolio)** · `TypeScript` · Updated 2026-09-02<br>
-  No repository description provided yet.
+- ⚪ **[chandan-portfolio](https://github.com/chandannmahatoo/chandan-portfolio)** ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) · pushed 2 months ago<br>
+  <i>No repository description provided yet.</i>
 
-- **[git-hooks-automation-suite](https://github.com/chandannmahatoo/git-hooks-automation-suite)** · `Python` · Updated 2026-07-01<br>
+- ⚪ **[git-hooks-automation-suite](https://github.com/chandannmahatoo/git-hooks-automation-suite)** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) · pushed 4 months ago<br>
   Git hooks are automated scripts that run at specific points during Git's workflow. They let you customize Git's…
 <!-- REPOSITORIES:END -->
-
-<div align="center">
-  <sub>Refreshed automatically with my most recently updated public repositories.</sub>
-</div>
 
 ## Recent Repository Activity
 
 <!-- RECENT_COMMITS:START -->
-- **[AI-Sentiment](https://github.com/chandannmahatoo/AI-Sentiment)** · [f5c7fd9](https://github.com/chandannmahatoo/AI-Sentiment/commit/f5c7fd9322190ade06e35f250bfd82448e77afd7) · Updated files in models/ · 2026-11-21
-- **[ThermaGuard-AI](https://github.com/chandannmahatoo/ThermaGuard-AI)** · [3ecb78d](https://github.com/chandannmahatoo/ThermaGuard-AI/commit/3ecb78dc64513101979321aa13e2bc4858c25b04) · Create SECURITY.md · 2026-09-13
-- **[chandan-portfolio](https://github.com/chandannmahatoo/chandan-portfolio)** · [6b477bf](https://github.com/chandannmahatoo/chandan-portfolio/commit/6b477bf25e11327a193e961abc9317423c72c7f1) · Final version · 2026-09-02
+- **[AI-Sentiment](https://github.com/chandannmahatoo/AI-Sentiment)** · [`f5c7fd9`](https://github.com/chandannmahatoo/AI-Sentiment/commit/f5c7fd9322190ade06e35f250bfd82448e77afd7) · Updated files in models/ · yesterday
+- **[ThermaGuard-AI](https://github.com/chandannmahatoo/ThermaGuard-AI)** · [`3ecb78d`](https://github.com/chandannmahatoo/ThermaGuard-AI/commit/3ecb78dc64513101979321aa13e2bc4858c25b04) · Create SECURITY.md · 2 months ago
+- **[chandan-portfolio](https://github.com/chandannmahatoo/chandan-portfolio)** · [`6b477bf`](https://github.com/chandannmahatoo/chandan-portfolio/commit/6b477bf25e11327a193e961abc9317423c72c7f1) · Final version · 2 months ago
 <!-- RECENT_COMMITS:END -->
 
 ## GitHub Analytics
