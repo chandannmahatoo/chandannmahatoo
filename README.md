@@ -183,8 +183,24 @@ Collaborating on an NLP-based project focused on textual sentiment and emotion c
 ## ⏱️ Coding Time (WakaTime)
 
 <!-- WAKATIME:START -->
-_Add your WakaTime public profile or stats card here after setting up WakaTime. See SETUP.md._
+
+<h2 align="center">⏱️ My Coding Activity</h2>
+
+<p align="center">
+  <a href="https://wakatime.com/@c07213b3-30af-4201-83ef-851aa0ad22d1">
+    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=c07213b3-30af-4201-83ef-851aa0ad22d1&layout=compact&theme=transparent&hide_border=true"
+         alt="WakaTime Coding Statistics" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://wakatime.com/@c07213b3-30af-4201-83ef-851aa0ad22d1">
+    View my complete WakaTime profile
+  </a>
+</p>
+
 <!-- WAKATIME:END -->
+
 
 ---
 
