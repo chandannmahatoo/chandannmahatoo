@@ -1,0 +1,248 @@
+name: Update profile data
+
+on:
+  schedule:
+    - cron: "23 6,18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Shared with the snake workflow so both workflows do not write concurrently.
+concurrency:
+  group: profile-readme-writes-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v6.1.0
+        with:
+          fetch-depth: 0
+
+      - name: Ensure the default branch is checked out
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git switch -C "$BRANCH_NAME"
+
+      - name: Generate dynamic README sections
+        uses: actions/github-script@v8.0.0
+        with:
+          script: |
+            const fs = require("fs");
+            const path = "README.md";
+            const readme = fs.readFileSync(path, "utf8");
+            let updated = readme;
+
+            function replaceMarkedBlock(source, startMarker, endMarker, content, label) {
+              const startCount = source.split(startMarker).length - 1;
+              const endCount = source.split(endMarker).length - 1;
+
+              if (startCount !== 1 || endCount !== 1) {
+                core.warning(`${label}: expected exactly one start and end marker; skipping this block.`);
+                return source;
+              }
+
+              const startIndex = source.indexOf(startMarker);
+              const endIndex = source.indexOf(endMarker);
+
+              if (endIndex < startIndex) {
+                core.warning(`${label}: markers are incorrectly ordered; skipping this block.`);
+                return source;
+              }
+
+              return source.slice(0, startIndex + startMarker.length)
+                + "\n" + content + "\n"
+                + source.slice(endIndex);
+            }
+
+            function cleanText(value, maxLength = 180) {
+              const text = String(value || "")
+                .replace(/[\r\n\t]+/g, " ")
+                .replace(/\s+/g, " ")
+                .trim();
+
+              return text.length > maxLength
+                ? text.slice(0, maxLength - 1) + "…"
+                : text;
+            }
+
+            function escapeMarkdown(value) {
+              return cleanText(value, 180)
+                .replace(/\\/g, "\\\\")
+                .replace(/\|/g, "\\|")
+                .replace(/`/g, "\\`")
+                .replace(/\[/g, "\\[")
+                .replace(/\]/g, "\\]");
+            }
+
+            const owner = context.repo.owner;
+            const repoName = context.repo.repo;
+
+            // Fetch public repositories. API errors are warnings; no README content is lost.
+            let repos = [];
+            let reposAvailable = false;
+
+            try {
+              repos = await github.paginate(github.rest.repos.listForUser, {
+                username: owner,
+                type: "owner",
+                sort: "updated",
+                direction: "desc",
+                per_page: 100
+              });
+
+              repos = repos
+                .filter(repo => !repo.fork && !repo.archived && !repo.private)
+                .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+
+              reposAvailable = true;
+            } catch (error) {
+              core.warning(`Could not retrieve repositories (possible API/rate-limit issue): ${error.message}`);
+            }
+
+            // 1) Compact latest repository list: no wide tables and no fixed widths.
+            if (reposAvailable) {
+              const latest = repos.slice(0, 5);
+              const repoContent = latest.length
+                ? latest.map(repo => {
+                    const name = escapeMarkdown(repo.name);
+                    const description = escapeMarkdown(
+                      repo.description || "No repository description provided yet."
+                    );
+                    const language = escapeMarkdown(repo.language || "Not specified");
+                    const updatedDate = new Date(repo.updated_at).toISOString().slice(0, 10);
+
+                    return [
+                      `- **[${name}](${repo.html_url})** · \`${language}\` · ⭐ ${repo.stargazers_count} · Updated ${updatedDate}`,
+                      `  ${description}`
+                    ].join("\n");
+                  }).join("\n\n")
+                : "<sub>No public, non-fork, non-archived repositories were found.</sub>";
+
+              updated = replaceMarkedBlock(
+                updated,
+                "<!-- REPOSITORIES:START -->",
+                "<!-- REPOSITORIES:END -->",
+                repoContent,
+                "Latest repositories"
+              );
+            }
+
+            // 2) Latest commit for the three most recently updated public repositories.
+            if (reposAvailable) {
+              const commitRepos = repos.slice(0, 3);
+              const commitLines = [];
+
+              for (const repo of commitRepos) {
+                try {
+                  const response = await github.rest.repos.listCommits({
+                    owner,
+                    repo: repo.name,
+                    per_page: 1
+                  });
+
+                  const commit = response.data[0];
+                  if (!commit) continue;
+
+                  const message = escapeMarkdown(
+                    (commit.commit.message || "Commit message unavailable").split("\n")[0]
+                  );
+                  const date = commit.commit.author?.date || commit.commit.committer?.date;
+                  const day = date ? new Date(date).toISOString().slice(0, 10) : "date unavailable";
+                  const shortSha = commit.sha.slice(0, 7);
+
+                  commitLines.push(
+                    `- **[${escapeMarkdown(repo.name)}](${repo.html_url})** · [${shortSha}](${commit.html_url}) · ${message} · ${day}`
+                  );
+                } catch (error) {
+                  core.warning(`Could not fetch latest commit for ${repo.name}: ${error.message}`);
+                }
+              }
+
+              const commitsContent = commitLines.length
+                ? commitLines.join("\n")
+                : "<sub>No recent commits could be retrieved for the selected public repositories.</sub>";
+
+              updated = replaceMarkedBlock(
+                updated,
+                "<!-- RECENT_COMMITS:START -->",
+                "<!-- RECENT_COMMITS:END -->",
+                commitsContent,
+                "Recent commits"
+              );
+            }
+
+            // 3) Optional Q1 day counter. Configure repository variable Q1_START_DATE as YYYY-MM-DD.
+            const startDateValue = process.env.Q1_START_DATE;
+            if (!startDateValue) {
+              core.warning("Q1_START_DATE is not set; leaving the roadmap progress block unchanged.");
+            } else {
+              const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(startDateValue);
+              const startDate = match
+                ? new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3])))
+                : null;
+
+              if (!startDate || Number.isNaN(startDate.getTime())
+                  || startDate.toISOString().slice(0, 10) !== startDateValue) {
+                core.warning("Q1_START_DATE must be a valid YYYY-MM-DD date; skipping roadmap progress.");
+              } else {
+                const today = new Date();
+                const todayUtc = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate());
+                const elapsedDays = Math.floor((todayUtc - startDate.getTime()) / 86400000) + 1;
+
+                if (elapsedDays < 1) {
+                  core.warning("Q1_START_DATE is in the future; skipping roadmap progress.");
+                } else {
+                  const day = Math.min(elapsedDays, 90);
+                  const suffix = elapsedDays > 90
+                    ? " · 90-day Q1 window elapsed"
+                    : "";
+                  const progress = `<sub>Q1 of 12 · Foundations · Day ${day} of 90${suffix}</sub>`;
+
+                  updated = replaceMarkedBlock(
+                    updated,
+                    "<!-- ROADMAP_PROGRESS:START -->",
+                    "<!-- ROADMAP_PROGRESS:END -->",
+                    progress,
+                    "Roadmap progress"
+                  );
+                }
+              }
+            }
+
+            if (updated === readme) {
+              core.info("No README changes were required.");
+            } else {
+              fs.writeFileSync(path, updated, "utf8");
+              core.info("README dynamic sections generated.");
+            }
+        env:
+          Q1_START_DATE: ${{ vars.Q1_START_DATE }}
+
+      - name: Commit and push README updates
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+
+          if [[ -z "$(git status --porcelain README.md)" ]]; then
+            echo "README is already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+          git commit -m "chore: refresh dynamic profile data"
+
+          # Rebase the generated commit on the latest default-branch state.
+          git fetch origin "$BRANCH_NAME"
+          git pull --rebase origin "$BRANCH_NAME"
+          git push origin "HEAD:$BRANCH_NAME"
