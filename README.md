@@ -1,360 +1,297 @@
-
-<!-- ===================================================== -->
-<!-- HERO -->
-<!-- ===================================================== -->
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:0F172A,50:164E63,100:312E81&text=CHANDAN%20KUMAR%20MAHATO&fontSize=34&fontColor=FFFFFF&fontAlignY=38&animation=fadeIn&desc=B.Tech%20CSE%20%7C%20Aspiring%20AI%2FML%20Systems%20Engineer&descAlignY=60&descSize=15" width="100%" alt="Animated navy and cyan profile banner with Chandan Kumar Mahato's name">
+<img src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:0F172A,50:164E63,100:312E81&text=CHANDAN%20KUMAR%20MAHATO&fontSize=34&fontColor=FFFFFF&fontAlignY=38&animation=fadeIn&desc=B.Tech%20CSE%20%7C%20Aspiring%20AI%2FML%20Systems%20Engineer&descAlignY=60&descSize=15" width="100%" alt="Navy and cyan banner with Chandan Kumar Mahato's name and role">
 
-<br>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&duration=3000&pause=900&color=36BCF7&center=true&vCenter=true&width=650&lines=Learning+Computer+Science+from+First+Principles;Building+with+C%2B%2B%2C+Python+and+DSA;Exploring+Machine+Learning+and+NLP;Learn.+Build.+Experiment.+Improve." alt="Animated introduction showing computer science, programming and AI learning interests">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&duration=3000&pause=900&color=36BCF7&center=true&vCenter=true&width=720&lines=Learning+Computer+Science+from+First+Principles;Building+with+C%2B%2B%2C+Python+and+Data+Structures;Exploring+Machine+Learning+and+AI+Systems;Learn.+Build.+Experiment.+Improve." alt="Animated introduction">
 
 <p>
-  Building strong foundations in Computer Science, programming and Artificial Intelligence.
-  <br>
-  Learning through fundamentals, experimentation and practical projects.
+  <strong>Learn. Build. Research. Experiment. Improve.</strong><br>
+  Building strong foundations in Computer Science and working toward engineering intelligent, scalable AI systems.
 </p>
 
-<br>
-
-<a href="https://github.com/chandannmahatoo">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile">
-</a>
-<a href="https://www.linkedin.com/in/chandannmahatoo/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn profile">
-</a>
-<a href="https://www.instagram.com/chandannmahatoo/">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram profile">
-</a>
-<a href="https://facebook.com/chandannmahatoo">
-  <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook profile">
-</a>
-<a href="https://leetcode.com/u/chandannmahatoo/">
-  <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode profile">
-</a>
-<a href="mailto:chandannmahatoo@gmail.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Chandan">
-</a>
+<a href="https://github.com/chandannmahatoo"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+<a href="https://www.linkedin.com/in/chandannmahatoo/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://leetcode.com/u/chandannmahatoo/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"></a>
+<a href="https://www.instagram.com/chandannmahatoo/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
+<a href="https://facebook.com/chandannmahatoo"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
+<a href="mailto:chandannmahatoo@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 
 <br><br>
 
-<img src="https://komarev.com/ghpvc/?username=chandannmahatoo&label=PROFILE+VIEWS&color=36BCF7&style=flat-square" alt="GitHub profile views">
+<img src="https://komarev.com/ghpvc/?username=chandannmahatoo&label=PROFILE%20VIEWS&color=36BCF7&style=flat-square" alt="Profile views">
 
 </div>
-
----
-
-<!-- ===================================================== -->
-<!-- ABOUT ME -->
-<!-- ===================================================== -->
 
 ## About Me
 
 <table>
 <tr>
-<td width="58%" valign="top">
+<td width="50%" valign="top">
 
 ### Who I Am
 
 - B.Tech Computer Science Engineering student
 - Learning C++, Python, C and Data Structures & Algorithms
 - Exploring Artificial Intelligence and Machine Learning
-- Interested in NLP, Deep Learning and AI Systems
-- Building projects and strengthening engineering fundamentals
+- Interested in NLP, deep learning and AI systems
+- Learning by implementing concepts and building projects
 
 </td>
-<td width="42%" valign="top">
+<td width="50%" valign="top">
 
 ### Current Focus
 
-<img src="https://img.shields.io/badge/LEARNING_STAGE-Q1%20%7C%20FOUNDATIONS-164E63?style=flat-square" alt="Current learning stage: Q1 Foundations">
+<img src="https://img.shields.io/badge/CURRENT%20STAGE-Q1%20OF%2012%20%7C%20FOUNDATIONS-164E63?style=flat-square" alt="Current stage Q1 of 12: Foundations">
 
-**Learning philosophy**
-
-`Learn → Understand → Implement`
-
-`Experiment → Build → Improve`
-
-**Core objective**
-
-Develop strong foundations before moving towards advanced AI systems.
+- Programming fundamentals with C++ and Python
+- Data Structures & Algorithms
+- Mathematics for Computer Science
+- Git, Linux, testing and problem solving
+- Building strong fundamentals before specializing
 
 </td>
 </tr>
 </table>
 
----
+## The 36-Month Learning Journey
 
-<!-- ===================================================== -->
-<!-- LEARNING JOURNEY -->
-<!-- ===================================================== -->
+**12 quarters. One journey. From a student to an AI/ML Systems Engineer.**
 
-## Learning Journey
+My roadmap is organized into 12 quarters, with each quarter combining focused learning and a practical engineering project. The sequence moves from programming and mathematics foundations toward AI infrastructure and an independent AI platform.
 
 <details open>
-<summary><strong>Q1 · Foundations & First Builds</strong></summary>
+<summary><strong>Q1–Q4 · Foundations to Transformers & LLMs (Months 1–12)</strong></summary>
 
-<br>
-
-| Focus area | Learning goals |
-|:--|:--|
-| Programming | C++, Python and C |
-| Data Structures & Algorithms | Arrays, sorting, searching and recursion |
-| Mathematics | Calculus, linear algebra and discrete mathematics |
-| Computer Science | Programming fundamentals |
-| AI & Machine Learning | Data analysis, ML fundamentals and NLP |
-| Engineering tools | Git, GitHub and Linux |
+| Quarter | Focus | Core learning areas | Roadmap project |
+|:--|:--|:--|:--|
+| **Q1 · Months 1–3** | Build Your Foundations | C++ / Python; DSA (arrays, trees, graphs); mathematics (linear algebra, calculus, probability); Git, Linux, testing; problem solving | **DSA Toolkit** — implement core data structures and algorithms |
+| **Q2 · Months 4–6** | Classical Machine Learning | NumPy, Pandas; regression, trees, SVM, clustering; model evaluation; feature engineering; end-to-end ML pipeline | **Sentiment Analysis AI** — dataset → model → API → deployment |
+| **Q3 · Months 7–9** | Deep Learning | Neural networks; backpropagation; PyTorch; CNN, RNN, LSTM; attention | **MiniAutograd** — build a neural network from scratch using NumPy |
+| **Q4 · Months 10–12** | Transformers & LLMs | Tokenization; transformer architecture; training and sampling; KV cache fundamentals; introduction to LLM production | **MiniGPT** — build and train a small transformer model |
 
 </details>
 
----
+<details>
+<summary><strong>Q5–Q8 · Systems Engineering to Distributed ML (Months 13–24)</strong></summary>
 
-<!-- ===================================================== -->
-<!-- TECHNOLOGIES -->
-<!-- ===================================================== -->
+| Quarter | Focus | Core learning areas | Roadmap project |
+|:--|:--|:--|:--|
+| **Q5 · Months 13–15** | Systems Engineering | C; memory; operating systems; processes and threads; networking (TCP/IP); databases and caching; system calls | **Systems Lab** — build an allocator, thread pool, HTTP server and key-value store |
+| **Q6 · Months 16–18** | Production ML / MLOps | FastAPI; Docker and Kubernetes; CI/CD; model serving; monitoring and logging; experiment tracking | **Production ML Platform V1** — deploy an end-to-end ML model |
+| **Q7 · Months 19–21** | GPU / CUDA Engineering | GPU architecture; CUDA programming; kernel optimization; memory management; profiling and benchmarking | **CUDA Kernels** — implement and optimize matrix operations and other kernels |
+| **Q8 · Months 22–24** | Distributed ML Systems | Distributed systems; data parallelism; model parallelism; fault tolerance; distributed training | **Distributed Training** — train a model across multiple GPUs or machines |
 
-## Tech Stack & Tools
+</details>
+
+<details>
+<summary><strong>Q9–Q12 · LLM Serving to an Independent AI Platform (Months 25–36)</strong></summary>
+
+| Quarter | Focus | Core learning areas | Roadmap project |
+|:--|:--|:--|:--|
+| **Q9 · Months 25–27** | LLM Inference & Serving | Scheduling; batching; KV cache; quantization; streaming; inference engines | **MiniServe** — build a high-performance LLM inference server |
+| **Q10 · Months 28–30** | AI Infrastructure | Serving infrastructure; vector databases; model optimization; autoscaling; observability; AI compilers (introduction) | **Mini AI Cloud** — build a scalable multi-model serving platform |
+| **Q11 · Months 31–33** | Agents & Coding AI | RAG and tool calling; agent planning; code understanding; sandboxing and execution; testing; evaluation and safety | **Coding Agent** — build an agent that can understand a repository and help fix issues |
+| **Q12 · Months 34–36** | Independent AI Platform | Full-stack AI systems; chat, agents and tools; model routing; security and monitoring; real-world deployment | **Your AI Platform** — integrate models, agents, tools and deployment |
+
+</details>
+
+<sub>Roadmap note: quarter names and projects describe planned learning milestones, not claims that every topic or project is already completed. The current stage is Q1.</sub>
+
+## Tech Stack
 
 <div align="center">
 
-### Programming Languages
+**Programming Languages**
 
-<img src="https://skillicons.dev/icons?i=cpp,python,c&theme=light" alt="C++, Python and C programming language icons">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=cpp,python,c&theme=dark">
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=cpp,python,c&theme=light">
+  <img src="https://skillicons.dev/icons?i=cpp,python,c" height="48" alt="C++, Python and C">
+</picture>
 
 <br><br>
 
-### AI, Machine Learning & Data
+**AI, Machine Learning & Data**
 
 <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy">
 <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas">
 <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="Scikit-learn">
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white" alt="Matplotlib">
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square" alt="Matplotlib">
 
 <br><br>
 
-### Development Environment
+**Development Environment**
 
-<img src="https://skillicons.dev/icons?i=git,github,vscode,jupyter,linux&theme=light" alt="Git, GitHub, Visual Studio Code, Jupyter and Linux icons">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git,github,vscode,jupyter,linux&theme=dark">
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git,github,vscode,jupyter,linux&theme=light">
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,jupyter,linux" height="48" alt="Git, GitHub, VS Code, Jupyter and Linux">
+</picture>
 
 </div>
 
----
-
-<!-- ===================================================== -->
-<!-- PROJECTS -->
-<!-- ===================================================== -->
-
 ## Projects & Experiments
+
+The projects below represent a mix of roadmap milestones, hackathon work and independent exploration. Their descriptions reflect the scope of work, not a claim of production readiness.
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### AI Vernacular Pedagogy & Translation
+### DSA Toolkit
 
-Exploring an AI-powered multilingual translation solution for mother-tongue primary education through SIH 2026.
+**Q1 roadmap project**
 
-**Areas of focus**
+A C++ implementation collection for understanding core data structures and algorithms through code, testing and complexity analysis.
 
-- Hindi ↔ Punjabi translation
-- English ↔ Punjabi translation
-- Translation models and API exploration
-- Voice interaction and educational content generation
+- Data structures and algorithms
+- Implementation and problem solving
+- Testing and benchmarking
 
-**Technologies**
-
-`Python` `NLP` `Translation Models` `APIs`
-
-<sub>Currently exploring the technical approach and developing a simple working prototype.</sub>
+<sub>Roadmap milestone · Q1</sub>
 
 </td>
 <td width="50%" valign="top">
 
 ### AI Sentiment & Emotion Analysis
 
-Collaborating on an NLP-based project focused on textual sentiment and emotion classification.
+**Q2 roadmap project / collaborative exploration**
 
-**My contribution**
+An NLP project exploring text-based sentiment and emotion classification.
 
 - Exploratory data analysis
-- Data preprocessing
+- Text preprocessing
 - Machine learning experiments
 - Model evaluation
 
-**Technologies**
-
-`Python` `Pandas` `NumPy` `Scikit-learn` `NLP`
-
-<a href="https://github.com/chandannmahatoo/AI-Sentiment">Explore repository ↗</a>
+<a href="https://github.com/chandannmahatoo/AI-Sentiment"><strong>AI-Sentiment repository ↗</strong></a>
 
 </td>
 </tr>
 <tr>
-<td colspan="2">
+<td width="50%" valign="top">
 
 ### ThermaGuard-AI
 
-Geospatial intelligence project exploring industrial fire and persistent thermal anomaly detection using satellite data and contextual information.
+**Independent project exploration**
 
-<a href="https://github.com/chandannmahatoo/ThermaGuard-AI">Explore repository ↗</a>
+A geospatial intelligence project exploring industrial fire and persistent thermal anomaly detection using satellite data and contextual information.
+
+- NASA FIRMS and geospatial data
+- Context enrichment and feature engineering
+- Classification and risk analysis
+
+<a href="https://github.com/chandannmahatoo/ThermaGuard-AI"><strong>ThermaGuard-AI repository ↗</strong></a>
+
+</td>
+<td width="50%" valign="top">
+
+### AI Vernacular Pedagogy & Translation
+
+**SIH 2026 · Hackathon project**
+
+Exploring an AI-powered multilingual translation solution for mother-tongue primary education.
+
+- Hindi ↔ Punjabi
+- English ↔ Punjabi
+- Translation models and API exploration
+- Voice interaction and educational content
+
+<sub>Prototype exploration · SIH 2026</sub>
 
 </td>
 </tr>
 </table>
 
----
-
-<!-- ===================================================== -->
-<!-- FEATURED REPOSITORIES -->
-<!-- ===================================================== -->
-
-## Featured Repositories
-
-<div align="center">
-
-<a href="https://github.com/chandannmahatoo/AI-Sentiment">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=chandannmahatoo&repo=AI-Sentiment&theme=transparent&hide_border=true" width="48%" alt="Pinned repository card for AI-Sentiment">
-</a>
-<a href="https://github.com/chandannmahatoo/ThermaGuard-AI">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=chandannmahatoo&repo=ThermaGuard-AI&theme=transparent&hide_border=true" width="48%" alt="Pinned repository card for ThermaGuard-AI">
-</a>
-
-</div>
-
----
-
-<!-- ===================================================== -->
-<!-- LATEST REPOSITORIES -->
-<!-- IMPORTANT: DO NOT MODIFY CONTENT BETWEEN MARKERS -->
-<!-- ===================================================== -->
-
 ## Latest Repositories
 
 <div align="center">
 
-<p><i>Recently updated projects, experiments and engineering work.</i></p>
-
-<a href="https://github.com/chandannmahatoo?tab=repositories">
-  <img src="https://img.shields.io/badge/EXPLORE-ALL%20REPOSITORIES-164E63?style=for-the-badge&logo=github&logoColor=white" alt="Explore all GitHub repositories">
-</a>
-
+<a href="https://github.com/chandannmahatoo?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-ALL%20REPOSITORIES-164E63?style=for-the-badge&logo=github&logoColor=white" alt="Explore all repositories"></a>
 <img src="https://img.shields.io/badge/AUTO--UPDATED-GITHUB%20ACTIONS-2563EB?style=for-the-badge&logo=githubactions&logoColor=white" alt="Automatically updated with GitHub Actions">
 
 </div>
 
 <!-- REPOSITORIES:START -->
-<table><tbody><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/AI-Sentiment">📁 AI-Sentiment</a></h3><p>Explore this repository and its development.</p><p><img src="https://img.shields.io/badge/Language-Python-2563EB?style=flat-square" alt="Language: Python"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-11-21</sub></p><p><a href="https://github.com/chandannmahatoo/AI-Sentiment">View Repository ↗</a></p></div></td></tr><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/ThermaGuard-AI">📁 ThermaGuard-AI</a></h3><p>AI-powered geospatial intelligence platform for detecting, classifying, and monitoring industrial fires and persistent thermal anomalies using NASA FIRMS, satellite data, geospatial context, and explainable AI.</p><p><img src="https://img.shields.io/badge/Language-Python-2563EB?style=flat-square" alt="Language: Python"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-09-13</sub></p><p><a href="https://github.com/chandannmahatoo/ThermaGuard-AI">View Repository ↗</a></p></div></td></tr><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/chandan-portfolio">📁 chandan-portfolio</a></h3><p>Explore this repository and its development.</p><p><img src="https://img.shields.io/badge/Language-TypeScript-2563EB?style=flat-square" alt="Language: TypeScript"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-09-02</sub></p><p><a href="https://github.com/chandannmahatoo/chandan-portfolio">View Repository ↗</a></p></div></td></tr><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/chandannmahatoo">📁 chandannmahatoo</a></h3><p>Aspiring AI/ML Systems Engineer | Building AI from First Principles 🚀</p><p><img src="https://img.shields.io/badge/Language-Not%20specified-2563EB?style=flat-square" alt="Language: Not specified"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-08-28</sub></p><p><a href="https://github.com/chandannmahatoo/chandannmahatoo">View Repository ↗</a></p></div></td></tr><tr><td width="100%"><div align="left"><h3><a href="https://github.com/chandannmahatoo/git-hooks-automation-suite">📁 git-hooks-automation-suite</a></h3><p>Git hooks are automated scripts that run at specific points during Git&#39;s workflow. They let you customize Git&#39;s behavior and enforce policies, run tests, or perform other actions automatically.</p><p><img src="https://img.shields.io/badge/Language-Python-2563EB?style=flat-square" alt="Language: Python"> <img src="https://img.shields.io/badge/Stars-0-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: 0"></p><p><sub>🕒 Last updated: 2026-07-01</sub></p><p><a href="https://github.com/chandannmahatoo/git-hooks-automation-suite">View Repository ↗</a></p></div></td></tr></tbody></table>
 <!-- REPOSITORIES:END -->
 
 <div align="center">
-  <sub>Automatically refreshed with my five most recently updated eligible public repositories.</sub>
+  <sub>Automatically refreshed with my most recently updated public repositories.</sub>
 </div>
-
----
-
-<!-- ===================================================== -->
-<!-- GITHUB ANALYTICS -->
-<!-- ===================================================== -->
 
 ## GitHub Analytics
 
 <div align="center">
 
-<a href="https://github.com/chandannmahatoo">
-  <img src="https://github-readme-stats.vercel.app/api?username=chandannmahatoo&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" height="165" alt="GitHub contribution and repository statistics">
-</a>
-<a href="https://github.com/chandannmahatoo">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chandannmahatoo&layout=compact&hide_border=true&theme=transparent" height="165" alt="Most used programming languages on GitHub">
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=chandannmahatoo&show_icons=true&hide_border=true&theme=transparent&title_color=36BCF7&icon_color=36BCF7&text_color=C9D1D9&rank_icon=github">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=chandannmahatoo&show_icons=true&hide_border=true&theme=transparent&title_color=0E7490&icon_color=0E7490&text_color=24292F&rank_icon=github">
+  <img src="https://github-readme-stats.vercel.app/api?username=chandannmahatoo&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" width="49%" alt="GitHub statistics">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=chandannmahatoo&layout=compact&hide_border=true&theme=transparent&title_color=36BCF7&text_color=C9D1D9">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=chandannmahatoo&layout=compact&hide_border=true&theme=transparent&title_color=0E7490&text_color=24292F">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chandannmahatoo&layout=compact&hide_border=true&theme=transparent" width="49%" alt="Most used languages">
+</picture>
 
 <br><br>
 
-<img src="https://streak-stats.demolab.com?user=chandannmahatoo&hide_border=true&theme=transparent" alt="GitHub contribution streak statistics">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=chandannmahatoo&hide_border=true&theme=transparent&ring=36BCF7&fire=36BCF7&currStreakNum=36BCF7&currStreakLabel=36BCF7&sideNums=C9D1D9&sideLabels=C9D1D9&dates=8B949E">
+  <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=chandannmahatoo&hide_border=true&theme=transparent&ring=0E7490&fire=0E7490&currStreakNum=0E7490&currStreakLabel=0E7490&sideNums=24292F&sideLabels=24292F&dates=57606A">
+  <img src="https://streak-stats.demolab.com?user=chandannmahatoo&hide_border=true&theme=transparent" width="80%" alt="GitHub contribution streak">
+</picture>
 
-<br>
+<br><br>
 
-### Contribution Activity
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=chandannmahatoo&bg_color=0D1117&color=36BCF7&line=36BCF7&point=FFFFFF&area=true&hide_border=true">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=chandannmahatoo&bg_color=FFFFFF&color=0E7490&line=0E7490&point=0F172A&area=true&hide_border=true">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=chandannmahatoo&theme=github-compact&hide_border=true" width="100%" alt="GitHub contribution activity graph">
+</picture>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=chandannmahatoo&theme=github-compact&hide_border=true" width="100%" alt="GitHub contribution activity graph">
-
-### Contribution Snake
+<br><br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chandannmahatoo/chandannmahatoo/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/chandannmahatoo/chandannmahatoo/output/github-contribution-grid-snake.svg">
-  <img src="https://raw.githubusercontent.com/chandannmahatoo/chandannmahatoo/output/github-contribution-grid-snake.svg" width="100%" alt="Animated GitHub contribution snake">
+  <img src="https://raw.githubusercontent.com/chandannmahatoo/chandannmahatoo/output/github-contribution-grid-snake.svg" width="100%" alt="Animated contribution snake">
 </picture>
 
-</div>
+<br><br>
 
-### Coding Activity · WakaTime
-
-<div align="center">
-
-<a href="https://wakatime.com/@c07213b3-30af-4201-83ef-851aa0ad22d1">
-  <img src="https://img.shields.io/badge/WakaTime-VIEW%20CODING%20ACTIVITY-164E63?style=for-the-badge&logo=wakatime&logoColor=white" alt="Visit public WakaTime coding activity profile">
-</a>
-
-<sub>Visit my public WakaTime profile for coding time and language activity.</sub>
+<a href="https://wakatime.com/@c07213b3-30af-4201-83ef-851aa0ad22d1"><img src="https://img.shields.io/badge/WakaTime-VIEW%20CODING%20ACTIVITY-164E63?style=for-the-badge&logo=wakatime&logoColor=white" alt="View WakaTime coding activity"></a>
 
 </div>
-
----
-
-<!-- ===================================================== -->
-<!-- LONG-TERM VISION -->
-<!-- ===================================================== -->
 
 ## Long-Term Vision
 
 <div align="center">
 
-**From Computer Science foundations to building intelligent systems.**
+**12 quarters. One journey. A continuous progression from fundamentals to independent AI systems.**
+
+`Student → AI/ML Systems Engineer → AI Systems Researcher → AI Platform Builder`
+
+`Mathematics → Algorithms → Machine Learning → Deep Learning → Systems → Infrastructure → AI Platforms`
 
 <br>
 
-`Student → AI Engineer → Researcher → Innovator`
+**DISCIPLINE + CONSISTENCY = FREEDOM**
 
-<br>
-
-`Mathematics → Algorithms → Machine Learning`
-
-`→ Deep Learning → AI Systems → Infrastructure`
+<sub>Same person. Bigger dreams. Different mindset. Greater impact.</sub>
 
 </div>
 
----
-
-<!-- ===================================================== -->
-<!-- CONNECT -->
-<!-- ===================================================== -->
+## Let's Connect
 
 <div align="center">
 
-## Let's Connect
-
-<p>Connect with me and follow my learning and engineering journey.</p>
-
-<a href="https://github.com/chandannmahatoo">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-</a>
-<a href="https://www.linkedin.com/in/chandannmahatoo/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-</a>
-<a href="https://www.instagram.com/chandannmahatoo/">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
-</a>
-<a href="https://facebook.com/chandannmahatoo">
-  <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
-</a>
-<a href="https://leetcode.com/u/chandannmahatoo/">
-  <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode">
-</a>
-<a href="mailto:chandannmahatoo@gmail.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-</a>
+<a href="https://github.com/chandannmahatoo"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+<a href="https://www.linkedin.com/in/chandannmahatoo/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://leetcode.com/u/chandannmahatoo/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"></a>
+<a href="https://www.instagram.com/chandannmahatoo/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
+<a href="https://facebook.com/chandannmahatoo"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
+<a href="mailto:chandannmahatoo@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 
 <br><br>
 
@@ -362,8 +299,6 @@ Geospatial intelligence project exploring industrial fire and persistent thermal
 
 <sub>One concept at a time. One project at a time.</sub>
 
-<br><br>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:312E81,50:164E63,100:0F172A&height=110&section=footer" width="100%" alt="Decorative animated cyan and navy footer wave">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:312E81,50:164E63,100:0F172A&height=110&section=footer" width="100%" alt="Navy and cyan footer wave">
 
 </div>
