@@ -184,13 +184,13 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 <sub><b>4</b> public repositories &nbsp;·&nbsp; <b>1</b> active in the last 14 days &nbsp;·&nbsp; Last push today</sub>
 <!-- REPO_SUMMARY:END -->
 
-<br>
 
 <sub>
 🟢 Active within 14 days &nbsp;·&nbsp;
 🟡 Active within 60 days &nbsp;·&nbsp;
 ⚪ Older activity
 </sub>
+<br>
 
 </div>
 
