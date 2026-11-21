@@ -265,10 +265,11 @@ jobs:
               }
             }
 
-            // 2) Latest commit activity for the three most recently pushed repositories.
+            
+            // 2) Latest commit activity — compact timeline style.
             if (reposAvailable) {
               const commitRepos = repos.slice(0, 3);
-              const commitRows = [];
+              const commitItems = [];
 
               for (const repo of commitRepos) {
                 try {
@@ -281,29 +282,35 @@ jobs:
                   const commit = response.data[0];
                   if (!commit) continue;
 
-                  const message = escapeHTML(cleanText(tidyCommitMessage(commit.commit.message), 90));
-                  const date = commit.commit.author?.date || commit.commit.committer?.date;
+                  const message = escapeHTML(
+                    cleanText(tidyCommitMessage(commit.commit.message), 90)
+                  );
+
+                  const date = commit.commit.author?.date
+                    || commit.commit.committer?.date;
+
                   const when = date ? relativeTime(date) : "date unavailable";
                   const shortSha = commit.sha.slice(0, 7);
+
                   const repoNameSafe = escapeHTML(repo.name);
                   const repoUrl = escapeHTML(repo.html_url);
                   const commitUrl = escapeHTML(commit.html_url);
 
-                  commitRows.push(
-                    `<tr>\n` +
-                    `  <td><strong><a href="${repoUrl}">${repoNameSafe}</a></strong></td>\n` +
-                    `  <td><a href="${commitUrl}"><code>${shortSha}</code></a></td>\n` +
-                    `  <td>${message}</td>\n` +
-                    `  <td><sub>${when}</sub></td>\n` +
-                    `</tr>`
+                  commitItems.push(
+                    `- **<a href="${repoUrl}">${repoNameSafe}</a>** ` +
+                    `· <a href="${commitUrl}"><code>${shortSha}</code></a><br>` +
+                    `  ${message} <sub>· 🕒 ${when}</sub>`
                   );
+
                 } catch (error) {
-                  core.warning(`Could not fetch latest commit for ${repo.name}: ${error.message}`);
+                  core.warning(
+                    `Could not fetch latest commit for ${repo.name}: ${error.message}`
+                  );
                 }
               }
 
-              const commitsContent = commitRows.length
-                ? `<table>\n<thead><tr><th>Repository</th><th>Commit</th><th>Latest change</th><th>When</th></tr></thead>\n<tbody>\n${commitRows.join("\n")}\n</tbody>\n</table>`
+              const commitsContent = commitItems.length
+                ? commitItems.join("\n\n")
                 : "<sub>No recent commits could be retrieved for the selected public repositories.</sub>";
 
               updated = replaceMarkedBlock(
@@ -314,6 +321,7 @@ jobs:
                 "Recent commits"
               );
             }
+
 
             // 3) Optional Q1 day counter. Configure repository variable Q1_START_DATE as YYYY-MM-DD.
             const startDateValue = process.env.Q1_START_DATE;
