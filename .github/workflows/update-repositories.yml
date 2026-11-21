@@ -14,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the profile repository
+      # Step 1: Checkout profile repository
       - name: Checkout profile repository
         uses: actions/checkout@v6
 
-      # Step 2: Fetch repositories and update README
+      # Step 2: Generate repository cards
       - name: Update README repository cards
         uses: actions/github-script@v8
         with:
@@ -32,7 +32,7 @@ jobs:
             // Read README
             const readme = fs.readFileSync(path, "utf8");
 
-            // Find README markers
+            // Find repository markers
             const startIndex = readme.indexOf(start);
             const endIndex = readme.indexOf(end);
 
@@ -71,7 +71,7 @@ jobs:
                 per_page: 100
               });
 
-            // Filter repositories and select the latest five
+            // Filter repositories and select latest five
             const visible = repos
               .filter(repo =>
                 !repo.fork &&
@@ -80,7 +80,8 @@ jobs:
               )
               .sort(
                 (a, b) =>
-                  new Date(b.updated_at) - new Date(a.updated_at)
+                  new Date(b.updated_at) -
+                  new Date(a.updated_at)
               )
               .slice(0, 5);
 
@@ -109,69 +110,25 @@ jobs:
 
               const url = escapeHtml(repo.html_url);
 
-              return `
-              <td width="50%" valign="top">
-                <div align="center">
-
-                  <h3>
-                    <a href="${url}">${name}</a>
-                  </h3>
-
-                  <p>${description}</p>
-
-                  <p>
-                    <img
-                      src="https://img.shields.io/badge/Language-${languageBadge}-2563EB?style=flat-square"
-                      alt="Language: ${language}"
-                    />
-                    <img
-                      src="https://img.shields.io/badge/Stars-${stars}-F59E0B?style=flat-square&logo=github&logoColor=white"
-                      alt="Stars: ${stars}"
-                    />
-                  </p>
-
-                  <p>
-                    <sub>Last updated: ${updated}</sub>
-                  </p>
-
-                  <p>
-                    <a href="${url}">View Repository ↗</a>
-                  </p>
-
-                </div>
-              </td>
-              `;
+              return `<td width="50%" valign="top"><div align="center"><h3><a href="${url}">${name}</a></h3><p>${description}</p><p><img src="https://img.shields.io/badge/Language-${languageBadge}-2563EB?style=flat-square" alt="Language: ${language}"> <img src="https://img.shields.io/badge/Stars-${stars}-F59E0B?style=flat-square&logo=github&logoColor=white" alt="Stars: ${stars}"></p><p><sub>Last updated: ${updated}</sub></p><p><a href="${url}">View Repository ↗</a></p></div></td>`;
             });
 
-            // Arrange cards in two-column rows
+            // Arrange cards into two-column rows
             const rows = [];
 
             for (let i = 0; i < cards.length; i += 2) {
               const first = cards[i];
-              const second = cards[i + 1] || '<td width="50%"></td>';
 
-              rows.push(`
-              <tr>
-                ${first}
-                ${second}
-              </tr>
-              `);
+              const second =
+                cards[i + 1] || '<td width="50%"></td>';
+
+              rows.push(`<tr>${first}${second}</tr>`);
             }
 
-            // Build the final HTML section
+            // Generate final HTML section
             const section = visible.length
-              ? `
-            <table>
-              <tbody>
-                ${rows.join("\n")}
-              </tbody>
-            </table>
-            `
-              : `
-            <p align="center">
-              <i>No public repositories found yet.</i>
-            </p>
-            `;
+              ? `<table><tbody>${rows.join("")}</tbody></table>`
+              : '<p align="center"><i>No public repositories found yet.</i></p>';
 
             // Replace content between markers
             const contentStart = startIndex + start.length;
@@ -184,7 +141,7 @@ jobs:
               "\n" +
               readme.slice(contentEnd);
 
-            // Skip writing if nothing changed
+            // Skip if no changes
             if (updated === readme) {
               core.info(
                 "Repository cards are already up to date. No changes required."
@@ -192,11 +149,11 @@ jobs:
               return;
             }
 
-            // Save updated README
+            // Write updated README
             fs.writeFileSync(path, updated, "utf8");
 
             core.info(
-              `Successfully updated README with ${visible.length} repository cards.`
+              `Successfully generated ${visible.length} repository cards.`
             );
 
       # Step 3: Commit and push changes
