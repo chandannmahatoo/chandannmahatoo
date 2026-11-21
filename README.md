@@ -59,15 +59,15 @@
 
 ## Tech Stack
 
+## Tech Stack
+
 <div align="center">
 
 ### Programming Languages
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=cpp,python,c&theme=dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=cpp,python,c&theme=light">
-  <img src="https://skillicons.dev/icons?i=cpp,python,c" height="48" alt="C++, Python and C">
-</picture>
+<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C">
 
 <br><br>
 
@@ -82,11 +82,11 @@
 
 ### Developer Tools & Environment
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git,github,vscode,jupyter,linux&theme=dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git,github,vscode,jupyter,linux&theme=light">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,jupyter,linux" height="48" alt="Git, GitHub, VS Code, Jupyter and Linux">
-</picture>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code">
+<img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
 
 <br><br>
 
@@ -97,6 +97,7 @@
 <img src="https://img.shields.io/badge/Translation%20Models-Exploring-6366F1?style=flat-square" alt="Exploring Translation Models">
 
 </div>
+
 ## Projects & Experiments
 
 A selection of collaborative projects, applied experiments and planned work. Status labels reflect the current state; planned capabilities are not presented as completed features.
