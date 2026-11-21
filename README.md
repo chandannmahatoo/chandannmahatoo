@@ -2,7 +2,7 @@
 
 ### B.Tech CSE Student | Aspiring AI/ML Systems Engineer
 
-I’m building my foundation in Computer Science, programming and Artificial Intelligence.
+I'm building my foundation in Computer Science, programming and Artificial Intelligence.
 
 I believe in understanding concepts from first principles, experimenting with ideas, and learning by building.
 
@@ -10,14 +10,11 @@ I believe in understanding concepts from first principles, experimenting with id
   <a href="https://github.com/chandannmahatoo">
     <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github" />
   </a>
-  <a href="https://www.linkedin.com/in/chandannmahat07/">
+  <a href="https://www.linkedin.com/in/chandannmahatoo/">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" />
   </a>
-  <a href="https://facebook.com/chandannmahatoo">
-    <img src="https://img.shields.io/badge/Facebook-Connect-1877F2?style=for-the-badge&logo=facebook" />
-  </a>
-  <a href="https://leetcode.com/u/chandannmahatoo/">
-    <img src="https://img.shields.io/badge/LeetCode-Practice-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+  <a href="https://www.instagram.com/chandannmahatoo/">
+    <img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram" />
   </a>
 </p>
 
@@ -71,10 +68,10 @@ Currently focused on developing strong fundamentals before moving towards advanc
 
 Exploring an AI-powered multilingual translation solution for mother-tongue primary education through SIH 2026.
 
-**Focus areas:**
+**Areas of focus:**
 - Hindi ↔ Punjabi translation
 - English ↔ Punjabi translation
-- Translation model and API exploration
+- Translation models and API exploration
 - Voice-based interaction
 - Educational content generation
 
@@ -124,9 +121,9 @@ Collaborating on an NLP project focused on textual sentiment and emotion classif
 
 My long-term goal is to become an **AI/ML Systems Engineer** and eventually contribute to research and the development of impactful AI systems.
 
-My journey:
+**My Journey:**
 
-**Student → AI Engineer → Researcher → Innovator → Leader → Global Contributor**
+`Student → AI Engineer → Researcher → Innovator → Leader → Global Contributor`
 
 I want to understand the complete AI stack:
 
@@ -138,23 +135,29 @@ I want to understand the complete AI stack:
 
 <p align="center">
   <a href="https://github.com/chandannmahatoo">
-    <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github" />
+    <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-  <a href="https://www.linkedin.com/in/chandannmahat07/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" />
+  <a href="https://www.linkedin.com/in/chandannmahatoo/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://www.instagram.com/chandannmahatoo/">
+    <img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
   </a>
   <a href="https://facebook.com/chandannmahatoo">
-    <img src="https://img.shields.io/badge/Facebook-Follow-1877F2?style=for-the-badge&logo=facebook" />
+    <img src="https://img.shields.io/badge/Facebook-Follow-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
   </a>
   <a href="https://leetcode.com/u/chandannmahatoo/">
-    <img src="https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode" />
+    <img src="https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+  </a>
+  <a href="mailto:chandannmahatoo@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
 </p>
 
 ---
 
 <p align="center">
-  <b>Learn. Build. Research. Share. Improve.</b>
+  <b>LEARN · BUILD · RESEARCH · SHARE · IMPACT</b>
 </p>
 
 <p align="center">
