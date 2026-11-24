@@ -208,7 +208,7 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
   <h3>🚀 <a href="https://github.com/chandannmahatoo/AI-Sentiment">AI-Sentiment</a></h3>
   <p>An independent project and engineering workspace.</p>
   <p><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"></p>
-  <sub>🟢 Updated 2 days ago</sub><br>
+  <sub>🟢 Updated 3 days ago</sub><br>
   <a href="https://github.com/chandannmahatoo/AI-Sentiment"><strong>Explore repository ↗</strong></a>
 </td>
 </tr>
@@ -255,7 +255,7 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 <!-- RECENT_COMMITS:START -->
 - **<a href="https://github.com/chandannmahatoo/vernacular-pedagogy">vernacular-pedagogy</a>** · <a href="https://github.com/chandannmahatoo/vernacular-pedagogy/commit/8cb7a37a6ed44c240d3959ca4c6a661e2bfa62c0"><code>8cb7a37</code></a><br>  v0.0.1 <sub>· 🕒 today</sub>
 
-- **<a href="https://github.com/chandannmahatoo/AI-Sentiment">AI-Sentiment</a>** · <a href="https://github.com/chandannmahatoo/AI-Sentiment/commit/f5c7fd9322190ade06e35f250bfd82448e77afd7"><code>f5c7fd9</code></a><br>  Updated files in models/ <sub>· 🕒 2 days ago</sub>
+- **<a href="https://github.com/chandannmahatoo/AI-Sentiment">AI-Sentiment</a>** · <a href="https://github.com/chandannmahatoo/AI-Sentiment/commit/f5c7fd9322190ade06e35f250bfd82448e77afd7"><code>f5c7fd9</code></a><br>  Updated files in models/ <sub>· 🕒 3 days ago</sub>
 
 - **<a href="https://github.com/chandannmahatoo/ThermaGuard-AI">ThermaGuard-AI</a>** · <a href="https://github.com/chandannmahatoo/ThermaGuard-AI/commit/3ecb78dc64513101979321aa13e2bc4858c25b04"><code>3ecb78d</code></a><br>  Create SECURITY.md <sub>· 🕒 2 months ago</sub>
 <!-- RECENT_COMMITS:END -->
