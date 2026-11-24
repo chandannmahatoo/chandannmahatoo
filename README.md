@@ -44,7 +44,7 @@
 <img src="https://img.shields.io/badge/CURRENT%20STAGE-Q1%20OF%2012%20%7C%20FOUNDATIONS-164E63?style=flat-square" alt="Current stage Q1 of 12: Foundations">
 
 <!-- ROADMAP_PROGRESS:START -->
-<sub>Q1 of 12 · Foundations · Day 3 of 90</sub>
+<sub>Q1 of 12 · Foundations · Day 4 of 90</sub>
 <!-- ROADMAP_PROGRESS:END -->
 
 - Programming fundamentals with C++ and Python
@@ -181,7 +181,7 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 <img src="https://img.shields.io/badge/LIVE-AUTO--UPDATED-238636?style=for-the-badge&logo=githubactions&logoColor=white" alt="Automatically updated with GitHub Actions">
 
 <!-- REPO_SUMMARY:START -->
-<sub><b>4</b> public repositories &nbsp;·&nbsp; <b>1</b> active in the last 14 days &nbsp;·&nbsp; Last push 2 days ago</sub>
+<sub><b>5</b> public repositories &nbsp;·&nbsp; <b>2</b> active in the last 14 days &nbsp;·&nbsp; Last push today</sub>
 <!-- REPO_SUMMARY:END -->
 
 
@@ -198,12 +198,21 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 <table>
 <tr>
 <td width="50%" valign="top">
+  <h3>🚀 <a href="https://github.com/chandannmahatoo/vernacular-pedagogy">vernacular-pedagogy</a></h3>
+  <p>An AI-powered multilingual education platform for classroom translation and mother tongue-based learning, supporting Hindi, Punjabi, and English…</p>
+  <p><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"></p>
+  <sub>🟢 Updated today</sub><br>
+  <a href="https://github.com/chandannmahatoo/vernacular-pedagogy"><strong>Explore repository ↗</strong></a>
+</td>
+<td width="50%" valign="top">
   <h3>🚀 <a href="https://github.com/chandannmahatoo/AI-Sentiment">AI-Sentiment</a></h3>
   <p>An independent project and engineering workspace.</p>
   <p><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"></p>
   <sub>🟢 Updated 2 days ago</sub><br>
   <a href="https://github.com/chandannmahatoo/AI-Sentiment"><strong>Explore repository ↗</strong></a>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
   <h3>🚀 <a href="https://github.com/chandannmahatoo/ThermaGuard-AI">ThermaGuard-AI</a></h3>
   <p>AI-powered geospatial intelligence platform for detecting, classifying, and monitoring industrial fires and persistent thermal anomalies using NASA…</p>
@@ -211,8 +220,6 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
   <sub>⚪ Updated 2 months ago</sub><br>
   <a href="https://github.com/chandannmahatoo/ThermaGuard-AI"><strong>Explore repository ↗</strong></a>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
   <h3>🚀 <a href="https://github.com/chandannmahatoo/chandan-portfolio">chandan-portfolio</a></h3>
   <p>An independent project and engineering workspace.</p>
@@ -220,6 +227,8 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
   <sub>⚪ Updated 2 months ago</sub><br>
   <a href="https://github.com/chandannmahatoo/chandan-portfolio"><strong>Explore repository ↗</strong></a>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
   <h3>🚀 <a href="https://github.com/chandannmahatoo/git-hooks-automation-suite">git-hooks-automation-suite</a></h3>
   <p>Git hooks are automated scripts that run at specific points during Git&#39;s workflow. They let you customize Git&#39;s behavior and enforce policies, run…</p>
@@ -227,6 +236,7 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
   <sub>⚪ Updated 4 months ago</sub><br>
   <a href="https://github.com/chandannmahatoo/git-hooks-automation-suite"><strong>Explore repository ↗</strong></a>
 </td>
+<td width="50%"></td>
 </tr>
 </table>
 <!-- REPOSITORIES:END -->
@@ -243,11 +253,11 @@ A SIH 2026 project exploring AI-assisted multilingual translation for mother-ton
 <sub>A live snapshot of my latest repository commits and development progress.</sub>
 
 <!-- RECENT_COMMITS:START -->
+- **<a href="https://github.com/chandannmahatoo/vernacular-pedagogy">vernacular-pedagogy</a>** · <a href="https://github.com/chandannmahatoo/vernacular-pedagogy/commit/8cb7a37a6ed44c240d3959ca4c6a661e2bfa62c0"><code>8cb7a37</code></a><br>  v0.0.1 <sub>· 🕒 today</sub>
+
 - **<a href="https://github.com/chandannmahatoo/AI-Sentiment">AI-Sentiment</a>** · <a href="https://github.com/chandannmahatoo/AI-Sentiment/commit/f5c7fd9322190ade06e35f250bfd82448e77afd7"><code>f5c7fd9</code></a><br>  Updated files in models/ <sub>· 🕒 2 days ago</sub>
 
 - **<a href="https://github.com/chandannmahatoo/ThermaGuard-AI">ThermaGuard-AI</a>** · <a href="https://github.com/chandannmahatoo/ThermaGuard-AI/commit/3ecb78dc64513101979321aa13e2bc4858c25b04"><code>3ecb78d</code></a><br>  Create SECURITY.md <sub>· 🕒 2 months ago</sub>
-
-- **<a href="https://github.com/chandannmahatoo/chandan-portfolio">chandan-portfolio</a>** · <a href="https://github.com/chandannmahatoo/chandan-portfolio/commit/6b477bf25e11327a193e961abc9317423c72c7f1"><code>6b477bf</code></a><br>  Final version <sub>· 🕒 2 months ago</sub>
 <!-- RECENT_COMMITS:END -->
 
 <div align="center">
