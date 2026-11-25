@@ -44,7 +44,7 @@
 <img src="https://img.shields.io/badge/CURRENT%20STAGE-Q1%20OF%2012%20%7C%20FOUNDATIONS-164E63?style=flat-square" alt="Current stage Q1 of 12: Foundations">
 
 <!-- ROADMAP_PROGRESS:START -->
-<sub>Q1 of 12 · Foundations · Day 4 of 90</sub>
+<sub>Q1 of 12 · Foundations · Day 5 of 90</sub>
 <!-- ROADMAP_PROGRESS:END -->
 
 - Programming fundamentals with C++ and Python
